@@ -1,0 +1,91 @@
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ProofOfExistence
+Function name: withdraw_intou13()
+PC address: 3539
+Estimated Gas Usage: 1058 - 1343
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_46.sol:163
+
+require(now > lockTime_intou13[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x691, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: withdraw_intou13(), txdata: 0x5c03b626, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ProofOfExistence
+Function name: withdraw_intou33()
+PC address: 5170
+Estimated Gas Usage: 1057 - 1342
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_46.sol:96
+
+require(now > lockTime_intou33[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x3b9, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: withdraw_intou33(), txdata: 0xb1f09e89, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ProofOfExistence
+Function name: SetFileExistenceProof(address,string,string,address,uint8)
+PC address: 6558
+Estimated Gas Usage: 48294 - 220202
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x86180000020022, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: SetFileExistenceProof(address,string,string,address,uint8), txdata: 0x846d949100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000006100000000000000000000000000000000000000000000000000000000000000001700000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: ProofOfExistence
+Function name: SetFileExistenceProof(address,string,string,address,uint8)
+PC address: 6727
+Estimated Gas Usage: 1783 - 9974
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: SetFileExistenceProof(address,string,string,address,uint8), txdata: 0x846d949100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000040, value: 0x0
+
+

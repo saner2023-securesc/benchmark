@@ -1,0 +1,751 @@
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send17()
+PC address: 2392
+Estimated Gas Usage: 970 - 35251
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:122
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x20015dfb45, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1080bc3800400024, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send17(), txdata: 0x0198f4ea, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send1()
+PC address: 2772
+Estimated Gas Usage: 1036 - 35317
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:108
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1000000280000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send1(), txdata: 0x149caf56, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send23()
+PC address: 2875
+Estimated Gas Usage: 969 - 35250
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:20
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x8f73, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20000000000200000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send23(), txdata: 0x4f0af4fc, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send32()
+PC address: 3017
+Estimated Gas Usage: 1013 - 35294
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:198
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x800008000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe080003b0701004, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send32(), txdata: 0x58d9161f, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send20()
+PC address: 3098
+Estimated Gas Usage: 1035 - 35316
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:187
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x201f173c76000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x11c0c033c0702a00, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send20(), txdata: 0x58ffa620, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send27()
+PC address: 3208
+Estimated Gas Usage: 1079 - 35360
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:166
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xa, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x40200c003e0709b00, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send27(), txdata: 0x635b9773, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send24()
+PC address: 3289
+Estimated Gas Usage: 969 - 35250
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:16
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe40003987800ae8, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send24(), txdata: 0x6449e74e, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send5()
+PC address: 3370
+Estimated Gas Usage: 991 - 35272
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:162
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1000000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20000c1bbe7d10208, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send5(), txdata: 0x68589847, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send7()
+PC address: 3451
+Estimated Gas Usage: 1013 - 35294
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:224
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe000803c000ac02, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send7(), txdata: 0x6aa6caa4, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send9()
+PC address: 3620
+Estimated Gas Usage: 1057 - 35338
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:140
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe0046a007c40000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send9(), txdata: 0x6faec000, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send2()
+PC address: 3701
+Estimated Gas Usage: 968 - 35249
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:115
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20e80c4c3c00a0008, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send2(), txdata: 0x74de0959, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send22()
+PC address: 3782
+Estimated Gas Usage: 990 - 35271
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:87
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xf00a, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x40000b803c0800000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send22(), txdata: 0x788913ab, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send3()
+PC address: 3863
+Estimated Gas Usage: 1012 - 35293
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:131
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe00072007700e60, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send3(), txdata: 0x7cce880c, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send4()
+PC address: 3944
+Estimated Gas Usage: 1034 - 35315
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:213
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x3ff37e17fc8, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xf00b92800002300, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send4(), txdata: 0x82caa706, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send12()
+PC address: 4153
+Estimated Gas Usage: 969 - 35250
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:94
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x9f00016000c4ee, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xde0b80027680000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send12(), txdata: 0x908025b4, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send11()
+PC address: 4234
+Estimated Gas Usage: 991 - 35272
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:101
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1fbf1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20000e7100367ffff, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send11(), txdata: 0x92307e38, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send13()
+PC address: 4888
+Estimated Gas Usage: 1035 - 35316
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:172
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x13c20, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe0100c004000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send13(), txdata: 0x944f70e2, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send8()
+PC address: 5293
+Estimated Gas Usage: 968 - 35249
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:29
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x26002644fcffbffc, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x40800042160000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send8(), txdata: 0xa66fb0b4, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send26()
+PC address: 5374
+Estimated Gas Usage: 990 - 35271
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:180
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x5ffee, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20000b84000412100, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send26(), txdata: 0xaba35f7b, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send6()
+PC address: 5455
+Estimated Gas Usage: 1012 - 35293
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:10
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x28000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe10c6c3e0900000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send6(), txdata: 0xac3b7a7e, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send21()
+PC address: 5536
+Estimated Gas Usage: 1034 - 35315
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:55
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe00000000200000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send21(), txdata: 0xad6216b0, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send31()
+PC address: 5617
+Estimated Gas Usage: 1056 - 35337
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:169
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x419ffffffffff9, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x40000000000080000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send31(), txdata: 0xafcccbb4, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send28()
+PC address: 5698
+Estimated Gas Usage: 1078 - 35359
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:48
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20800c003b002a208, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send28(), txdata: 0xb0fb6dd2, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send15()
+PC address: 5779
+Estimated Gas Usage: 968 - 35249
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:41
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1000d44002080000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send15(), txdata: 0xb3f5a0dd, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send16()
+PC address: 5969
+Estimated Gas Usage: 1034 - 35315
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:13
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe003821c3640000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send16(), txdata: 0xbfc0c430, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send25()
+PC address: 6050
+Estimated Gas Usage: 1056 - 35337
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:148
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x8, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1040c00000635ff4, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send25(), txdata: 0xc3ea9ec5, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send10()
+PC address: 6131
+Estimated Gas Usage: 967 - 35248
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:80
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xde0c603a7800000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send10(), txdata: 0xd26493d7, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send30()
+PC address: 6212
+Estimated Gas Usage: 989 - 35270
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:26
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2a3, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe00080000000080, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send30(), txdata: 0xdc52a049, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send19()
+PC address: 6364
+Estimated Gas Usage: 1055 - 35336
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:156
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2000370000009000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send19(), txdata: 0xf5bfa0b2, value: 0xde0b6b3a763ffff
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: bug_unchk_send14()
+PC address: 6445
+Estimated Gas Usage: 1077 - 35358
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_6.sol:23
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xb67fffbf, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x401e0bc4000808040, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x1
+Caller: [ATTACKER], function: bug_unchk_send14(), txdata: 0xf8be4d4e, value: 0xde0b6b3a763ffff
+
+

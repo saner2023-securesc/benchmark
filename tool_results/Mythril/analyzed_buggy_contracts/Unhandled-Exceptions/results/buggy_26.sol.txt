@@ -1,0 +1,201 @@
+==== Unchecked return value from external call. ====
+SWC ID: 104
+Severity: Medium
+Contract: UBBCToken
+Function name: sendToWinner_unchk20()
+PC address: 4627
+Estimated Gas Usage: 9374 - 64645
+The return value of a message call is not checked.
+External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unhandled-Exceptions/buggy_26.sol:83
+
+winner_unchk20.send(winAmount_unchk20)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2020193, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: sendToWinner_unchk20(), txdata: 0x279265d2, value: 0x0
+
+==== Unchecked return value from external call. ====
+SWC ID: 104
+Severity: Medium
+Contract: UBBCToken
+Function name: sendToWinner_unchk44()
+PC address: 4772
+Estimated Gas Usage: 9396 - 64667
+The return value of a message call is not checked.
+External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unhandled-Exceptions/buggy_26.sol:220
+
+winner_unchk44.send(winAmount_unchk44)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2000000402000043, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: sendToWinner_unchk44(), txdata: 0x294e1b8e, value: 0x0
+
+==== Unchecked return value from external call. ====
+SWC ID: 104
+Severity: Medium
+Contract: UBBCToken
+Function name: my_func_unchk23(address)
+PC address: 5052
+Estimated Gas Usage: 1080 - 35361
+The return value of a message call is not checked.
+External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unhandled-Exceptions/buggy_26.sol:151
+
+dst.send(msg.value)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x87080000000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: my_func_unchk23(address), txdata: 0x3e153b710000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== External Call To User-Supplied Address ====
+SWC ID: 107
+Severity: Low
+Contract: UBBCToken
+Function name: my_func_uncheck36(address)
+PC address: 5238
+Estimated Gas Usage: 1140 - 35704
+A call to a user-supplied address is executed.
+An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unhandled-Exceptions/buggy_26.sol:198
+
+dst.call.value(msg.value)("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x20000000000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x180e0af537c62fefd, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: my_func_uncheck36(address), txdata: 0x550c16d4000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef, value: 0x0
+
+==== Unchecked return value from external call. ====
+SWC ID: 104
+Severity: Medium
+Contract: UBBCToken
+Function name: my_func_uncheck36(address)
+PC address: 5238
+Estimated Gas Usage: 1140 - 35704
+The return value of a message call is not checked.
+External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unhandled-Exceptions/buggy_26.sol:198
+
+dst.call.value(msg.value)("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x400003, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: my_func_uncheck36(address), txdata: 0x550c16d40000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Unchecked return value from external call. ====
+SWC ID: 104
+Severity: Medium
+Contract: UBBCToken
+Function name: my_func_unchk35(address)
+PC address: 5627
+Estimated Gas Usage: 1080 - 35361
+The return value of a message call is not checked.
+External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unhandled-Exceptions/buggy_26.sol:207
+
+dst.send(msg.value)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x210108000000020e, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xf40000000008fcc, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: my_func_unchk35(address), txdata: 0x8bd3d0d70000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Unchecked return value from external call. ====
+SWC ID: 104
+Severity: Medium
+Contract: UBBCToken
+Function name: sendToWinner_unchk8()
+PC address: 5989
+Estimated Gas Usage: 9440 - 64711
+The return value of a message call is not checked.
+External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unhandled-Exceptions/buggy_26.sol:183
+
+winner_unchk8.send(winAmount_unchk8)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1044402000005110d, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x100, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: sendToWinner_unchk8(), txdata: 0x994c3bfd, value: 0x0
+
+==== Unchecked return value from external call. ====
+SWC ID: 104
+Severity: Medium
+Contract: UBBCToken
+Function name: sendToWinner_unchk32()
+PC address: 7074
+Estimated Gas Usage: 9416 - 64687
+The return value of a message call is not checked.
+External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unhandled-Exceptions/buggy_26.sol:93
+
+winner_unchk32.send(winAmount_unchk32)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x18800000000000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: sendToWinner_unchk32(), txdata: 0xf5fbd77c, value: 0x0
+
+

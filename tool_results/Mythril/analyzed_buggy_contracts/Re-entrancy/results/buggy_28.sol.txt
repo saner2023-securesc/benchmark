@@ -1,0 +1,526 @@
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: HYDROGEN
+Function name: callme_re_ent42()
+PC address: 3241
+Estimated Gas Usage: 7686 - 61967
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:140
+
+msg.sender.send(10 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xa34fa604abe00022, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x373dc000160808003, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x8ac7230489e80000
+Caller: [ATTACKER], function: callme_re_ent42(), txdata: 0x0f7219b0, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: HYDROGEN
+Function name: callme_re_ent35()
+PC address: 3346
+Estimated Gas Usage: 7708 - 61989
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:351
+
+msg.sender.send(10 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x41a652a050b680002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x3d4f0deec769f7b7c, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x8ac7230489e80000
+Caller: [ATTACKER], function: callme_re_ent35(), txdata: 0x1578e01e, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: HYDROGEN
+Function name: callme_re_ent14()
+PC address: 3461
+Estimated Gas Usage: 7641 - 61922
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:258
+
+msg.sender.send(10 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40bc747050f080448, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x9400440d6, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x8ac7230489e80000
+Caller: [ATTACKER], function: callme_re_ent14(), txdata: 0x1abf48c0, value: 0x0
+
+==== External Call To User-Supplied Address ====
+SWC ID: 107
+Severity: Low
+Contract: HYDROGEN
+Function name: withdrawBalance_re_ent40()
+PC address: 6360
+Estimated Gas Usage: 7018 - 61679
+A call to a user-supplied address is executed.
+An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:367
+
+msg.sender.call.value(userBalance_re_ent40[msg.sender])("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1002000020, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdrawBalance_re_ent40(), txdata: 0x6cfd7721, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: HYDROGEN
+Function name: withdrawBalance_re_ent40()
+PC address: 6495
+Estimated Gas Usage: 7018 - 61679
+Write to persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:371
+
+userBalance_re_ent40[msg.sender] = 0
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40000000002040, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x200000000000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdrawBalance_re_ent40(), txdata: 0x6cfd7721, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: HYDROGEN
+Function name: bug_re_ent27()
+PC address: 8539
+Estimated Gas Usage: 7768 - 62709
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:396
+
+msg.sender.send(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xf20d6b5b5840002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x4ad96142c25050fbb, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xde0b6b3a7640000
+Caller: [ATTACKER], function: bug_re_ent27(), txdata: 0x9128b348, value: 0x0
+
+==== External Call To User-Supplied Address ====
+SWC ID: 107
+Severity: Low
+Contract: HYDROGEN
+Function name: withdraw_balances_re_ent8()
+PC address: 9360
+Estimated Gas Usage: 7065 - 61726
+A call to a user-supplied address is executed.
+An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:296
+
+msg.sender.call.value(balances_re_ent8[msg.sender ])("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x22861adca670f0000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2081000000000001, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_balances_re_ent8(), txdata: 0xa2bcc8c5, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: HYDROGEN
+Function name: withdraw_balances_re_ent8()
+PC address: 9491
+Estimated Gas Usage: 2035 - 36789
+Write to persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:298
+
+balances_re_ent8[msg.sender] = 0
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x8000000020000212, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x831000000040, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_balances_re_ent8(), txdata: 0xa2bcc8c5, value: 0x0
+
+==== External Call To User-Supplied Address ====
+SWC ID: 107
+Severity: Low
+Contract: HYDROGEN
+Function name: bug_re_ent13()
+PC address: 9577
+Estimated Gas Usage: 7812 - 62753
+A call to a user-supplied address is executed.
+An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:425
+
+msg.sender.call.value(1 ether)("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40de095aba6d41200, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x40000000002, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xde0b6b3a7640000
+Caller: [ATTACKER], function: bug_re_ent13(), txdata: 0xa328c11f, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: HYDROGEN
+Function name: bug_re_ent13()
+PC address: 9577
+Estimated Gas Usage: 7812 - 62753
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:425
+
+msg.sender.call.value(1 ether)("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x25f0bc17bf800840, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x4da07238c1a0bd508, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xde0b6b3a7640000
+Caller: [ATTACKER], function: bug_re_ent13(), txdata: 0xa328c11f, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: HYDROGEN
+Function name: bug_re_ent13()
+PC address: 9656
+Estimated Gas Usage: 7812 - 62753
+Read of persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:429
+
+not_called_re_ent13 = false
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4000000000f000002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2100800001080d110, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xde0b6b3a7640000
+Caller: [ATTACKER], function: bug_re_ent13(), txdata: 0xa328c11f, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: HYDROGEN
+Function name: bug_re_ent13()
+PC address: 9670
+Estimated Gas Usage: 7812 - 62753
+Write to persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:429
+
+not_called_re_ent13 = false
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4000000000f000002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2100800001080d110, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xde0b6b3a7640000
+Caller: [ATTACKER], function: bug_re_ent13(), txdata: 0xa328c11f, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Low
+Contract: HYDROGEN
+Function name: buyTicket_re_ent9()
+PC address: 11669
+Estimated Gas Usage: 13586 - 88527
+Read of persistent state following external call
+The contract account state is accessed after an external call to a fixed address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:189
+
+lastPlayer_re_ent9 = msg.sender
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40000040210000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: buyTicket_re_ent9(), txdata: 0xacc0544f, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Low
+Contract: HYDROGEN
+Function name: buyTicket_re_ent9()
+PC address: 11722
+Estimated Gas Usage: 13586 - 88527
+Write to persistent state following external call
+The contract account state is accessed after an external call to a fixed address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:189
+
+lastPlayer_re_ent9 = msg.sender
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40000040210000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: buyTicket_re_ent9(), txdata: 0xacc0544f, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Low
+Contract: HYDROGEN
+Function name: buyTicket_re_ent9()
+PC address: 11729
+Estimated Gas Usage: 13586 - 88527
+Write to persistent state following external call
+The contract account state is accessed after an external call to a fixed address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:190
+
+jackpot_re_ent9    = address(this).balance
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40000040210000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: buyTicket_re_ent9(), txdata: 0xacc0544f, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: HYDROGEN
+Function name: bug_re_ent20()
+PC address: 12070
+Estimated Gas Usage: 7811 - 62752
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:115
+
+msg.sender.send(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1040bab723640004, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x225bc1a0441ce001, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xde0b6b3a7640000
+Caller: [ATTACKER], function: bug_re_ent20(), txdata: 0xd8fa982f, value: 0x0
+
+==== External Call To User-Supplied Address ====
+SWC ID: 107
+Severity: Low
+Contract: HYDROGEN
+Function name: withdraw_balances_re_ent1()
+PC address: 12531
+Estimated Gas Usage: 7064 - 61725
+A call to a user-supplied address is executed.
+An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:65
+
+msg.sender.call.value(balances_re_ent1[msg.sender ])("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x9200a, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x4a0000000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_balances_re_ent1(), txdata: 0xf0b6e306, value: 0x0
+
+==== State access after external call ====
+SWC ID: 107
+Severity: Medium
+Contract: HYDROGEN
+Function name: withdraw_balances_re_ent1()
+PC address: 12662
+Estimated Gas Usage: 7064 - 61725
+Write to persistent state following external call
+The contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:67
+
+balances_re_ent1[msg.sender] = 0
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40000000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2c02000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_balances_re_ent1(), txdata: 0xf0b6e306, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: HYDROGEN
+Function name: bug_re_ent41()
+PC address: 12748
+Estimated Gas Usage: 7766 - 62707
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:73
+
+msg.sender.send(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1042116b9a204005a, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x4021da44e1213854c, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xde0b6b3a7640000
+Caller: [ATTACKER], function: bug_re_ent41(), txdata: 0xf9a1f3d9, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: HYDROGEN
+Function name: callme_re_ent7()
+PC address: 13035
+Estimated Gas Usage: 7749 - 62030
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:232
+
+msg.sender.send(10 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xcece2704aa0c000c, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x5413804f5805840a0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x8ac7230489e80000
+Caller: [ATTACKER], function: callme_re_ent7(), txdata: 0xfef28f0b, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: HYDROGEN
+Function name: findtwoPercent(uint256)
+PC address: 13108
+Estimated Gas Usage: 1199 - 1294
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Re-entrancy/buggy_28.sol:46
+
+add(a,m)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x12046022148108089, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: findtwoPercent(uint256), txdata: 0x8ded4587ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd4, value: 0x0
+
+

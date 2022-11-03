@@ -1,0 +1,501 @@
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ChannelWallet
+Function name: withdraw_intou9()
+PC address: 4711
+Estimated Gas Usage: 1126 - 1411
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:159
+
+require(now > lockTime_intou9[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x10cc000800000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: withdraw_intou9(), txdata: 0x1cbdc87d, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: withdraw_intou9()
+PC address: 4770
+Estimated Gas Usage: 1962 - 36433
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:161
+
+msg.sender.transfer(transferValue_intou9)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xe, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2203080074085464, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xa
+Caller: [ATTACKER], function: withdraw_intou9(), txdata: 0x1cbdc87d, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ChannelWallet
+Function name: withdraw_intou17()
+PC address: 4994
+Estimated Gas Usage: 1126 - 1411
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:102
+
+require(now > lockTime_intou17[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x10, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou17(), txdata: 0x24243846, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: withdraw_intou17()
+PC address: 5053
+Estimated Gas Usage: 1962 - 36433
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:104
+
+msg.sender.transfer(transferValue_intou17)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x26, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x400000c0440980181, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xa
+Caller: [ATTACKER], function: withdraw_intou17(), txdata: 0x24243846, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ChannelWallet
+Function name: withdraw_intou13()
+PC address: 5909
+Estimated Gas Usage: 1103 - 1388
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:281
+
+require(now > lockTime_intou13[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2918002001440002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: withdraw_intou13(), txdata: 0x5c03b626, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: withdraw_intou13()
+PC address: 5968
+Estimated Gas Usage: 1939 - 36410
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:283
+
+msg.sender.transfer(transferValue_intou13)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xe, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x200045c00201c000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xa
+Caller: [ATTACKER], function: withdraw_intou13(), txdata: 0x5c03b626, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ChannelWallet
+Function name: withdraw_ovrflow1()
+PC address: 6219
+Estimated Gas Usage: 1124 - 1409
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:74
+
+require(now > lockTime_intou1[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x400000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: withdraw_ovrflow1(), txdata: 0x76be3cd1, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: withdraw_ovrflow1()
+PC address: 6278
+Estimated Gas Usage: 1960 - 36431
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:76
+
+msg.sender.transfer(transferValue_intou1)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x46, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x220008005002b109, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xa
+Caller: [ATTACKER], function: withdraw_ovrflow1(), txdata: 0x76be3cd1, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ChannelWallet
+Function name: withdraw_intou25()
+PC address: 6712
+Estimated Gas Usage: 1126 - 1411
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:174
+
+require(now > lockTime_intou25[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1460500000000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou25(), txdata: 0x835185a4, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: withdraw_intou25()
+PC address: 6771
+Estimated Gas Usage: 1962 - 36433
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:176
+
+msg.sender.transfer(transferValue_intou25)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x808000000008005e, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x560000502630006a1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xa
+Caller: [ATTACKER], function: withdraw_intou25(), txdata: 0x835185a4, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ChannelWallet
+Function name: withdraw_intou33()
+PC address: 8274
+Estimated Gas Usage: 1146 - 1431
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:54
+
+require(now > lockTime_intou33[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2021, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: withdraw_intou33(), txdata: 0xb1f09e89, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: withdraw_intou33()
+PC address: 8333
+Estimated Gas Usage: 1982 - 36453
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:56
+
+msg.sender.transfer(transferValue_intou33)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xc, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x401c414093c001800, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xa
+Caller: [ATTACKER], function: withdraw_intou33(), txdata: 0xb1f09e89, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ChannelWallet
+Function name: transfer_intou30(address,uint256)
+PC address: 8697
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:320
+
+balances_intou30[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1002310c03a082, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou30(address,uint256), txdata: 0xc036563e90842108421084210842108400000000000000000000000000000000000000000000000000800800000000400000000208004000000420000400040100000802, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ChannelWallet
+Function name: transfer_intou30(address,uint256)
+PC address: 8778
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:321
+
+balances_intou30[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1002310c03a082, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou30(address,uint256), txdata: 0xc036563e90842108421084210842108400000000000000000000000000000000000000000000000000800800000000400000000208004000000420000400040100000802, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ChannelWallet
+Function name: transfer_intou30(address,uint256)
+PC address: 8855
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:322
+
+balances_intou30[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x99020004bc1823, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x8, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou30(address,uint256), txdata: 0xc036563e902040810204081021428000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ChannelWallet
+Function name: withdraw_intou37()
+PC address: 9183
+Estimated Gas Usage: 1146 - 1431
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:135
+
+require(now > lockTime_intou37[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: withdraw_intou37(), txdata: 0xc2bc6798, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: ChannelWallet
+Function name: withdraw_intou37()
+PC address: 9242
+Estimated Gas Usage: 1982 - 36453
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:137
+
+msg.sender.transfer(transferValue_intou37)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2e, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1c1cf440000160011, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0xa
+Caller: [ATTACKER], function: withdraw_intou37(), txdata: 0xc2bc6798, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ChannelWallet
+Function name: transfer_intou22(address,uint256)
+PC address: 9361
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:21
+
+balances_intou22[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x80010889b0124002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou22(address,uint256), txdata: 0xd7f8581aa1084210842108401084214000000000000000000000000000000000000000000080020100400000011000000004040100400000010000000440000120000001, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ChannelWallet
+Function name: transfer_intou22(address,uint256)
+PC address: 9442
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:22
+
+balances_intou22[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x80010889b0124002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou22(address,uint256), txdata: 0xd7f8581aa1084210842108401084214000000000000000000000000000000000000000000080020100400000011000000004040100400000010000000440000120000001, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ChannelWallet
+Function name: transfer_intou22(address,uint256)
+PC address: 9519
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_6.sol:23
+
+balances_intou22[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x49208, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou22(address,uint256), txdata: 0xd7f8581a8421088421084210850a1210deadbeefdeadbeefdeadbeefdeadbeefdeadbeef8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+

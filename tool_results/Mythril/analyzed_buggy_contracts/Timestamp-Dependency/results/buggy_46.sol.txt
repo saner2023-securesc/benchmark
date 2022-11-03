@@ -1,0 +1,92 @@
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ProofOfExistence
+Function name: play_tmstmp31(uint256)
+PC address: 4328
+Estimated Gas Usage: 6204 - 26629
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_46.sol:22
+
+startTime + (5 * 1 days)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x400000000020ebfbd, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: play_tmstmp31(uint256), txdata: 0x99d8cc4dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6080, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ProofOfExistence
+Function name: play_tmstmp31(uint256)
+PC address: 4334
+Estimated Gas Usage: 314 - 409
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_46.sol:22
+
+if (startTime + (5 * 1 days) == _vtime){
+		winner_tmstmp31 = msg.sender;}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: play_tmstmp31(uint256), txdata: 0x99d8cc4d0000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ProofOfExistence
+Function name: SetFileExistenceProof(address,string,string,address,uint8)
+PC address: 5609
+Estimated Gas Usage: 48315 - 220223
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x10000010000002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: SetFileExistenceProof(address,string,string,address,uint8), txdata: 0x846d94910000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000170000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Exception State ====
+SWC ID: 110
+Severity: Medium
+Contract: ProofOfExistence
+Function name: SetFileExistenceProof(address,string,string,address,uint8)
+PC address: 5778
+Estimated Gas Usage: 1804 - 9995
+An assertion violation was triggered.
+It is possible to trigger an assertion violation. Note that Solidity assert() statements should only be used to check invariants. Review the transaction trace generated for this issue and either make sure your program logic is correct, or use require() instead of assert() if your goal is to constrain user inputs or enforce preconditions. Remember to validate inputs from both callers (for instance, via passed arguments) and callees (for instance, via return values).
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x180000000000025, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: SetFileExistenceProof(address,string,string,address,uint8), txdata: 0x846d949100000000000000000000000000808040080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000083, value: 0x0
+
+

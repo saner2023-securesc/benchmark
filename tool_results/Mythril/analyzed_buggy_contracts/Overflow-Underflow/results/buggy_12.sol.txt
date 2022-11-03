@@ -1,0 +1,176 @@
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ERC223Token
+Function name: withdraw_intou9()
+PC address: 1554
+Estimated Gas Usage: 1059 - 1344
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_12.sol:196
+
+require(now > lockTime_intou9[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: withdraw_intou9(), txdata: 0x1cbdc87d, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ERC223Token
+Function name: transfer_intou26(address,uint256)
+PC address: 1746
+Estimated Gas Usage: 13203 - 54149
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_12.sol:297
+
+balances_intou26[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou26(address,uint256), txdata: 0x46aa9243000000000000000000000000abfeaffeaffeafeeaffeaffeaffaaffe8ffeaffc0101100101020401010201010101010101010101010101010201010101010201, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ERC223Token
+Function name: transfer_intou26(address,uint256)
+PC address: 1827
+Estimated Gas Usage: 13203 - 54149
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_12.sol:298
+
+balances_intou26[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou26(address,uint256), txdata: 0x46aa9243000000000000000000000000abfeaffeaffeafeeaffeaffeaffaaffe8ffeaffc0101100101020401010201010101010101010101010101010201010101010201, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: ERC223Token
+Function name: transfer_intou26(address,uint256)
+PC address: 1904
+Estimated Gas Usage: 13203 - 54149
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_12.sol:299
+
+balances_intou26[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2040320004008023f, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x8, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou26(address,uint256), txdata: 0x46aa9243000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ERC223Token
+Function name: withdraw_intou13()
+PC address: 2071
+Estimated Gas Usage: 1080 - 1365
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_12.sol:206
+
+require(now > lockTime_intou13[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x400000820bb8c4, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: withdraw_intou13(), txdata: 0x5c03b626, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ERC223Token
+Function name: withdraw_intou25()
+PC address: 2351
+Estimated Gas Usage: 1080 - 1365
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_12.sol:255
+
+require(now > lockTime_intou25[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2c10000040004c2ec, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou25(), txdata: 0x835185a4, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: ERC223Token
+Function name: withdraw_intou37()
+PC address: 4540
+Estimated Gas Usage: 1079 - 1364
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_12.sol:180
+
+require(now > lockTime_intou37[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x211000050006cffc, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou37(), txdata: 0xc2bc6798, value: 0x0
+
+

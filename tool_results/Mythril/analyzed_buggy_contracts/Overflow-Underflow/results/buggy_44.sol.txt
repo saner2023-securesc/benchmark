@@ -1,0 +1,1301 @@
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: MultiHashWrapper
+Function name: transfer_intou38(address,uint256)
+PC address: 278
+Estimated Gas Usage: 13091 - 54037
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:263
+
+balances_intou38[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x80300161c7, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou38(address,uint256), txdata: 0x7daba89100000000000000000000000000000000000000000000000000000000000000002001040101040102020101010140200102010001010140208010022002020401, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: MultiHashWrapper
+Function name: transfer_intou38(address,uint256)
+PC address: 358
+Estimated Gas Usage: 13091 - 54037
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:264
+
+balances_intou38[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x80300161c7, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou38(address,uint256), txdata: 0x7daba89100000000000000000000000000000000000000000000000000000000000000002001040101040102020101010140200102010001010140208010022002020401, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: MultiHashWrapper
+Function name: transfer_intou38(address,uint256)
+PC address: 434
+Estimated Gas Usage: 13091 - 54037
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:265
+
+balances_intou38[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x10140001fe3a89, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x100, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou38(address,uint256), txdata: 0x7daba891000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Template
+Function name: transfer_intou14(address,uint256)
+PC address: 917
+Estimated Gas Usage: 13157 - 54103
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:374
+
+balances_intou14[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xc0028002804, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou14(address,uint256), txdata: 0xaefa551900000000000000000000000000000000000000000000000000000000000000008040080808802001402008080220200108021001400008400120080180010208, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Template
+Function name: transfer_intou14(address,uint256)
+PC address: 998
+Estimated Gas Usage: 13157 - 54103
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:375
+
+balances_intou14[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xc0028002804, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou14(address,uint256), txdata: 0xaefa551900000000000000000000000000000000000000000000000000000000000000008040080808802001402008080220200108021001400008400120080180010208, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Template
+Function name: transfer_intou14(address,uint256)
+PC address: 1075
+Estimated Gas Usage: 13157 - 54103
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:376
+
+balances_intou14[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x500101500a0000003, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou14(address,uint256), txdata: 0xaefa5519000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Operated
+Function name: withdraw_intou9()
+PC address: 2135
+Estimated Gas Usage: 1104 - 1389
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:148
+
+require(now > lockTime_intou9[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x318017f0a4db86c9a, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou9(), txdata: 0x1cbdc87d, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Operated
+Function name: withdraw_intou17()
+PC address: 2418
+Estimated Gas Usage: 1125 - 1410
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:106
+
+require(now > lockTime_intou17[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2870009000000e813, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: withdraw_intou17(), txdata: 0x24243846, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_undrflow2(address,uint256)
+PC address: 2620
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:88
+
+balances_intou2[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x410102000010821, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_undrflow2(address,uint256), txdata: 0x37ae6b7300000000000000000000000000000000000000000000000000000000000000000110014080042004100180100100010101010104108040200201040204401010, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_undrflow2(address,uint256)
+PC address: 2701
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:89
+
+balances_intou2[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x410102000010821, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_undrflow2(address,uint256), txdata: 0x37ae6b7300000000000000000000000000000000000000000000000000000000000000000110014080042004100180100100010101010104108040200201040204401010, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_undrflow2(address,uint256)
+PC address: 2778
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:90
+
+balances_intou2[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x300000000802103, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_undrflow2(address,uint256), txdata: 0x37ae6b73000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou26(address,uint256)
+PC address: 2888
+Estimated Gas Usage: 13158 - 54104
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:181
+
+balances_intou26[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou26(address,uint256), txdata: 0x46aa924300000000000000000000000000000000000000000000000000000000000000000402080801084008080402400240408001010108010101010802020140040440, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou26(address,uint256)
+PC address: 2969
+Estimated Gas Usage: 13158 - 54104
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:182
+
+balances_intou26[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou26(address,uint256), txdata: 0x46aa924300000000000000000000000000000000000000000000000000000000000000000402080801084008080402400240408001010108010101010802020140040440, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou26(address,uint256)
+PC address: 3046
+Estimated Gas Usage: 13158 - 54104
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:183
+
+balances_intou26[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x42500000090000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou26(address,uint256), txdata: 0x46aa9243000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa4000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Operated
+Function name: withdraw_ovrflow1()
+PC address: 3314
+Estimated Gas Usage: 1103 - 1388
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:75
+
+require(now > lockTime_intou1[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x80055b311902a847, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x800000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_ovrflow1(), txdata: 0x76be3cd1, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Operated
+Function name: withdraw_intou25()
+PC address: 3549
+Estimated Gas Usage: 1080 - 1365
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:162
+
+require(now > lockTime_intou25[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xc91b00505b, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou25(), txdata: 0x835185a4, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Operated
+Function name: withdraw_intou33()
+PC address: 3807
+Estimated Gas Usage: 1146 - 1431
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:56
+
+require(now > lockTime_intou33[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x44060a00000e03295, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou33(), txdata: 0xb1f09e89, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou10(address,uint256)
+PC address: 4040
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:34
+
+balances_intou10[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x6610002000002005, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou10(address,uint256), txdata: 0xc176237300000000000000000000000008004000000000002000000000000000000000001001021000010420100240808010028040204080010804200180010102080808, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou10(address,uint256)
+PC address: 4120
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:35
+
+balances_intou10[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x6610002000002005, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou10(address,uint256), txdata: 0xc176237300000000000000000000000008004000000000002000000000000000000000001001021000010420100240808010028040204080010804200180010102080808, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou10(address,uint256)
+PC address: 4196
+Estimated Gas Usage: 13180 - 54126
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:36
+
+balances_intou10[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x42400000100008101, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou10(address,uint256), txdata: 0xc1762373000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Operated
+Function name: withdraw_intou37()
+PC address: 4283
+Estimated Gas Usage: 1124 - 1409
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:122
+
+require(now > lockTime_intou37[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x30000011000600405, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: withdraw_intou37(), txdata: 0xc2bc6798, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou22(address,uint256)
+PC address: 4437
+Estimated Gas Usage: 13157 - 54103
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:43
+
+balances_intou22[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4240404814100c942, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou22(address,uint256), txdata: 0xd7f8581a00000000000000000000000000000000000000000000000000000000000000004040101008080101800202200810100210404001000220018080200840202004, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou22(address,uint256)
+PC address: 4518
+Estimated Gas Usage: 13157 - 54103
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:44
+
+balances_intou22[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4240404814100c942, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou22(address,uint256), txdata: 0xd7f8581a00000000000000000000000000000000000000000000000000000000000000004040101008080101800202200810100210404001000220018080200840202004, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Operated
+Function name: transfer_intou22(address,uint256)
+PC address: 4595
+Estimated Gas Usage: 13157 - 54103
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:45
+
+balances_intou22[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1000a1002102, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou22(address,uint256), txdata: 0xd7f8581a000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeefc0503dbeff2fbbac000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Feed
+Function name: withdraw_intou9()
+PC address: 4745
+Estimated Gas Usage: 1126 - 1411
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:148
+
+require(now > lockTime_intou9[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x2, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou9(), txdata: 0x1cbdc87d, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Feed
+Function name: withdraw_intou17()
+PC address: 5028
+Estimated Gas Usage: 1126 - 1411
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:106
+
+require(now > lockTime_intou17[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x8040000a002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou17(), txdata: 0x24243846, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_undrflow2(address,uint256)
+PC address: 5526
+Estimated Gas Usage: 13204 - 54150
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:88
+
+balances_intou2[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x100c000000c0342, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_undrflow2(address,uint256), txdata: 0x37ae6b7300000000000000000000000000000000000000000000000000000000000000008001200401010401104002100108040104020102010101010820021002040102, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_undrflow2(address,uint256)
+PC address: 5607
+Estimated Gas Usage: 13204 - 54150
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:89
+
+balances_intou2[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x100c000000c0342, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_undrflow2(address,uint256), txdata: 0x37ae6b7300000000000000000000000000000000000000000000000000000000000000008001200401010401104002100108040104020102010101010820021002040102, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_undrflow2(address,uint256)
+PC address: 5684
+Estimated Gas Usage: 13204 - 54150
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:90
+
+balances_intou2[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x8100040010081, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_undrflow2(address,uint256), txdata: 0x37ae6b73000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeefee2c800000020280000000000000040000000000000000000000000000000000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou26(address,uint256)
+PC address: 5794
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:181
+
+balances_intou26[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xc22008008208628e, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou26(address,uint256), txdata: 0x46aa9243000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa0208200110800208010108010110010001080180010040010220100101010180, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou26(address,uint256)
+PC address: 5875
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:182
+
+balances_intou26[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0xc22008008208628e, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou26(address,uint256), txdata: 0x46aa9243000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa0208200110800208010108010110010001080180010040010220100101010180, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou26(address,uint256)
+PC address: 5952
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:183
+
+balances_intou26[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x43001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou26(address,uint256), txdata: 0x46aa9243000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Feed
+Function name: withdraw_intou13()
+PC address: 6161
+Estimated Gas Usage: 1125 - 1410
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:396
+
+require(now > lockTime_intou13[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: withdraw_intou13(), txdata: 0x5c03b626, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Feed
+Function name: withdraw_ovrflow1()
+PC address: 6417
+Estimated Gas Usage: 1146 - 1431
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:75
+
+require(now > lockTime_intou1[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x20000000000010, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: withdraw_ovrflow1(), txdata: 0x76be3cd1, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou38(address,uint256)
+PC address: 6650
+Estimated Gas Usage: 13182 - 54128
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:263
+
+balances_intou38[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x10, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou38(address,uint256), txdata: 0x7daba89100000000000000000000000000000000000004000000000000000000000000000240028001000110012010400204108002200101028001010801040401028080, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou38(address,uint256)
+PC address: 6730
+Estimated Gas Usage: 13182 - 54128
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:264
+
+balances_intou38[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x10, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou38(address,uint256), txdata: 0x7daba89100000000000000000000000000000000000004000000000000000000000000000240028001000110012010400204108002200101028001010801040401028080, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou38(address,uint256)
+PC address: 6806
+Estimated Gas Usage: 13182 - 54128
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:265
+
+balances_intou38[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x400040080020008, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou38(address,uint256), txdata: 0x7daba891000000000000000000000000affeaffeaffeaffeaffeaffeaffeaffeaffeaffefffffffffff00000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Feed
+Function name: withdraw_intou25()
+PC address: 6907
+Estimated Gas Usage: 1148 - 1433
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:162
+
+require(now > lockTime_intou25[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x441f000000000100b, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x10000000000000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou25(), txdata: 0x835185a4, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou14(address,uint256)
+PC address: 7182
+Estimated Gas Usage: 13225 - 54171
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:374
+
+balances_intou14[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20000080, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou14(address,uint256), txdata: 0xaefa551900000000000000000000000000000000000000000000000000000000000000024002040280040401014001020101080140010801200440011080020204018000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou14(address,uint256)
+PC address: 7263
+Estimated Gas Usage: 13225 - 54171
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:375
+
+balances_intou14[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20000080, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou14(address,uint256), txdata: 0xaefa551900000000000000000000000000000000000000000000000000000000000000024002040280040401014001020101080140010801200440011080020204018000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou14(address,uint256)
+PC address: 7340
+Estimated Gas Usage: 13225 - 54171
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:376
+
+balances_intou14[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x20800002001012003, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou14(address,uint256), txdata: 0xaefa5519000000000000000000000000affeaffeaffeaffeaffeaffeaffeaffeaffeaffe8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Feed
+Function name: withdraw_intou33()
+PC address: 7507
+Estimated Gas Usage: 1124 - 1409
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:56
+
+require(now > lockTime_intou33[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x800040000c8007, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou33(), txdata: 0xb1f09e89, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou30(address,uint256)
+PC address: 7821
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:436
+
+balances_intou30[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x820000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou30(address,uint256), txdata: 0xc036563e00000000000000000000000000000000000000000000000000000000000000008080018010044020042001018080010108100102014080000808024001010401, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou30(address,uint256)
+PC address: 7902
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:437
+
+balances_intou30[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x820000000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou30(address,uint256), txdata: 0xc036563e00000000000000000000000000000000000000000000000000000000000000008080018010044020042001018080010108100102014080000808024001010401, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou30(address,uint256)
+PC address: 7979
+Estimated Gas Usage: 13181 - 54127
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:438
+
+balances_intou30[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x20200000000000009, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x8, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou30(address,uint256), txdata: 0xc036563e000000000000000000000000affeaffeaffeaffeaffeaffeaffeaffeaffeaffe7715f7bfb98bf85d7ffffefff7fbbf7700008000000000000000000000000000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou10(address,uint256)
+PC address: 8065
+Estimated Gas Usage: 13203 - 54149
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:34
+
+balances_intou10[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x100, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x400000000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou10(address,uint256), txdata: 0xc176237300000000000000000000000000000000000000000000000000000000000000008000104001020101040108400101040102010401804002208004080102042040, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou10(address,uint256)
+PC address: 8146
+Estimated Gas Usage: 13203 - 54149
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:35
+
+balances_intou10[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x100, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x400000000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: transfer_intou10(address,uint256), txdata: 0xc176237300000000000000000000000000000000000000000000000000000000000000008000104001020101040108400101040102010401804002208004080102042040, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou10(address,uint256)
+PC address: 8223
+Estimated Gas Usage: 13203 - 54149
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:36
+
+balances_intou10[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2100080000000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou10(address,uint256), txdata: 0xc1762373000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Feed
+Function name: withdraw_intou37()
+PC address: 8310
+Estimated Gas Usage: 1147 - 1432
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:122
+
+require(now > lockTime_intou37[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x24080002200402001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou37(), txdata: 0xc2bc6798, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou22(address,uint256)
+PC address: 8488
+Estimated Gas Usage: 13202 - 54148
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:43
+
+balances_intou22[msg.sender] - _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2000000248000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou22(address,uint256), txdata: 0xd7f8581a00000000000000000000000000000000000000000000000000000000000000000080011040080220002080040801010180011001800180012002010180004008, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou22(address,uint256)
+PC address: 8569
+Estimated Gas Usage: 13202 - 54148
+The arithmetic operator can underflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:44
+
+balances_intou22[msg.sender] -= _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2000000248000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: transfer_intou22(address,uint256), txdata: 0xd7f8581a00000000000000000000000000000000000000000000000000000000000000000080011040080220002080040801010180011001800180012002010180004008, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Feed
+Function name: transfer_intou22(address,uint256)
+PC address: 8646
+Estimated Gas Usage: 13202 - 54148
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_44.sol:45
+
+balances_intou22[_to] += _value
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: transfer_intou22(address,uint256), txdata: 0xd7f8581a000000000000000000000000aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+

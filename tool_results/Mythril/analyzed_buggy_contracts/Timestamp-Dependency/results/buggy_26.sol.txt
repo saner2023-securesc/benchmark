@@ -1,0 +1,544 @@
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp20()
+PC address: 2450
+Estimated Gas Usage: 197 - 292
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:71
+
+require(now != pastBlockTime_tmstmp20)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40000000000030c03, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp20(), txdata: 0x05681232, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp20()
+PC address: 2477
+Estimated Gas Usage: 254 - 349
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:73
+
+if(now % 15 == 0) { // winner    //bug
+            msg.sender.transfer(address(this).balance);
+        }
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x420, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp20(), txdata: 0x05681232, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp40()
+PC address: 2767
+Estimated Gas Usage: 196 - 291
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:193
+
+require(now != pastBlockTime_tmstmp40)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x100000000020c07, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp40(), txdata: 0x17c6abfa, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp40()
+PC address: 2794
+Estimated Gas Usage: 253 - 348
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:195
+
+if(now % 15 == 0) { // winner    //bug
+            msg.sender.transfer(address(this).balance);
+        }
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2000080002040441, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp40(), txdata: 0x17c6abfa, value: 0x8ac7230489e80000
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: UBBCToken
+Function name: play_tmstmp26(uint256)
+PC address: 3174
+Estimated Gas Usage: 327 - 422
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:65
+
+startTime + (5 * 1 days)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: play_tmstmp26(uint256), txdata: 0x35e7405ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6800, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: play_tmstmp26(uint256)
+PC address: 3180
+Estimated Gas Usage: 305 - 400
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:65
+
+if (startTime + (5 * 1 days) == block.timestamp){
+		winner_tmstmp26 = msg.sender;}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1000000000002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: play_tmstmp26(uint256), txdata: 0x35e7405f0000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: play_tmstmp30(uint256)
+PC address: 3261
+Estimated Gas Usage: 327 - 422
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:140
+
+if (startTime + (5 * 1 days) == block.timestamp){
+		winner_tmstmp30 = msg.sender;}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x50000000000000001, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: play_tmstmp30(uint256), txdata: 0x38861bd80000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp36()
+PC address: 3525
+Estimated Gas Usage: 217 - 312
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:170
+
+require(now != pastBlockTime_tmstmp36)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1040500010006, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20000000000000001, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: bug_tmstmp36(), txdata: 0x529ec451, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp36()
+PC address: 3552
+Estimated Gas Usage: 274 - 369
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:172
+
+if(now % 15 == 0) { // winner    //bug
+            msg.sender.transfer(address(this).balance);
+        }
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x800000d020c8411, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp36(), txdata: 0x529ec451, value: 0x8ac7230489e80000
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: UBBCToken
+Function name: play_tmstmp23(uint256)
+PC address: 3727
+Estimated Gas Usage: 318 - 413
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:119
+
+startTime + (5 * 1 days)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [CREATOR], function: play_tmstmp23(uint256), txdata: 0x7cd2ce0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6800, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: play_tmstmp23(uint256)
+PC address: 3733
+Estimated Gas Usage: 294 - 389
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:119
+
+if (startTime + (5 * 1 days) == _vtime){
+		winner_tmstmp23 = msg.sender;}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: play_tmstmp23(uint256), txdata: 0x7cd2ce0f0000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: play_tmstmp35(uint256)
+PC address: 3821
+Estimated Gas Usage: 316 - 411
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:184
+
+if (startTime + (5 * 1 days) == _vtime){
+		winner_tmstmp35 = msg.sender;}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: play_tmstmp35(uint256), txdata: 0x88d5cb7c0000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: UBBCToken
+Function name: play_tmstmp27(uint256)
+PC address: 3918
+Estimated Gas Usage: 317 - 412
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:216
+
+startTime + (5 * 1 days)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: play_tmstmp27(uint256), txdata: 0x8d356d07fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd6800, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: play_tmstmp27(uint256)
+PC address: 3924
+Estimated Gas Usage: 293 - 388
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:216
+
+if (startTime + (5 * 1 days) == _vtime){
+		winner_tmstmp27 = msg.sender;}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: play_tmstmp27(uint256), txdata: 0x8d356d070000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: play_tmstmp38(uint256)
+PC address: 4169
+Estimated Gas Usage: 326 - 421
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:90
+
+if (startTime + (5 * 1 days) == block.timestamp){
+		winner_tmstmp38 = msg.sender;}
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: play_tmstmp38(uint256), txdata: 0x975b58d90000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp4()
+PC address: 4544
+Estimated Gas Usage: 239 - 334
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:96
+
+require(now != pastBlockTime_tmstmp4)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x140000100090943, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp4(), txdata: 0xc78cc7d1, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp4()
+PC address: 4571
+Estimated Gas Usage: 296 - 391
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:98
+
+if(now % 15 == 0) { // winner    //bug
+            msg.sender.transfer(address(this).balance);
+        }
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x4400442003401, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp4(), txdata: 0xc78cc7d1, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp32()
+PC address: 4676
+Estimated Gas Usage: 261 - 356
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:81
+
+require(now != pastBlockTime_tmstmp32)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x9a101, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp32(), txdata: 0xd5214029, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp32()
+PC address: 4703
+Estimated Gas Usage: 318 - 413
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:83
+
+if(now % 15 == 0) { // winner    //bug
+            msg.sender.transfer(address(this).balance);
+        }
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x6042120940036a0f, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp32(), txdata: 0xd5214029, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp8()
+PC address: 4808
+Estimated Gas Usage: 194 - 289
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:148
+
+require(now != pastBlockTime_tmstmp8)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x2081000000020868, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp8(), txdata: 0xd8495c6d, value: 0x8ac7230489e80000
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: UBBCToken
+Function name: bug_tmstmp8()
+PC address: 4835
+Estimated Gas Usage: 251 - 346
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Timestamp-Dependency/buggy_26.sol:150
+
+if(now % 15 == 0) { // winner    //bug
+            msg.sender.transfer(address(this).balance);
+        }
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40000000100000004, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_tmstmp8(), txdata: 0xd8495c6d, value: 0x8ac7230489e80000
+
+

@@ -1,0 +1,6142 @@
+{
+	"attributes" : 
+	{
+		"absolutePath" : "buggy/tx.origin/buggy_41.sol",
+		"exportedSymbols" : 
+		{
+			"AO" : 
+			[
+				384
+			],
+			"tokenRecipient" : 
+			[
+				13
+			]
+		}
+	},
+	"children" : 
+	[
+		{
+			"attributes" : 
+			{
+				"literals" : 
+				[
+					"solidity",
+					">=",
+					"0.4",
+					".22",
+					"<",
+					"0.6",
+					".0"
+				]
+			},
+			"id" : 1,
+			"name" : "PragmaDirective",
+			"src" : "134:32:0"
+		},
+		{
+			"attributes" : 
+			{
+				"baseContracts" : 
+				[
+					null
+				],
+				"contractDependencies" : 
+				[
+					null
+				],
+				"contractKind" : "interface",
+				"documentation" : null,
+				"fullyImplemented" : false,
+				"linearizedBaseContracts" : 
+				[
+					13
+				],
+				"name" : "tokenRecipient",
+				"scope" : 385
+			},
+			"children" : 
+			[
+				{
+					"attributes" : 
+					{
+						"body" : null,
+						"documentation" : null,
+						"implemented" : false,
+						"isConstructor" : false,
+						"kind" : "function",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "receiveApproval",
+						"scope" : 13,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "external"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_from",
+										"scope" : 12,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 2,
+											"name" : "ElementaryTypeName",
+											"src" : "225:7:0"
+										}
+									],
+									"id" : 3,
+									"name" : "VariableDeclaration",
+									"src" : "225:13:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_value",
+										"scope" : 12,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 4,
+											"name" : "ElementaryTypeName",
+											"src" : "240:7:0"
+										}
+									],
+									"id" : 5,
+									"name" : "VariableDeclaration",
+									"src" : "240:14:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_token",
+										"scope" : 12,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 6,
+											"name" : "ElementaryTypeName",
+											"src" : "256:7:0"
+										}
+									],
+									"id" : 7,
+									"name" : "VariableDeclaration",
+									"src" : "256:14:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_extraData",
+										"scope" : 12,
+										"stateVariable" : false,
+										"storageLocation" : "calldata",
+										"type" : "bytes",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bytes",
+												"type" : "bytes"
+											},
+											"id" : 8,
+											"name" : "ElementaryTypeName",
+											"src" : "272:5:0"
+										}
+									],
+									"id" : 9,
+									"name" : "VariableDeclaration",
+									"src" : "272:25:0"
+								}
+							],
+							"id" : 10,
+							"name" : "ParameterList",
+							"src" : "224:74:0"
+						},
+						{
+							"attributes" : 
+							{
+								"parameters" : 
+								[
+									null
+								]
+							},
+							"children" : [],
+							"id" : 11,
+							"name" : "ParameterList",
+							"src" : "307:0:0"
+						}
+					],
+					"id" : 12,
+					"name" : "FunctionDefinition",
+					"src" : "200:108:0"
+				}
+			],
+			"id" : 13,
+			"name" : "ContractDefinition",
+			"src" : "168:143:0"
+		},
+		{
+			"attributes" : 
+			{
+				"baseContracts" : 
+				[
+					null
+				],
+				"contractDependencies" : 
+				[
+					null
+				],
+				"contractKind" : "contract",
+				"documentation" : null,
+				"fullyImplemented" : true,
+				"linearizedBaseContracts" : 
+				[
+					384
+				],
+				"name" : "AO",
+				"scope" : 385
+			},
+			"children" : 
+			[
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "name",
+						"scope" : 384,
+						"stateVariable" : true,
+						"storageLocation" : "default",
+						"type" : "string",
+						"value" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "string",
+								"type" : "string"
+							},
+							"id" : 14,
+							"name" : "ElementaryTypeName",
+							"src" : "368:6:0"
+						}
+					],
+					"id" : 15,
+					"name" : "VariableDeclaration",
+					"src" : "368:18:0"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "symbol",
+						"scope" : 384,
+						"stateVariable" : true,
+						"storageLocation" : "default",
+						"type" : "string",
+						"value" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "string",
+								"type" : "string"
+							},
+							"id" : 16,
+							"name" : "ElementaryTypeName",
+							"src" : "392:6:0"
+						}
+					],
+					"id" : 17,
+					"name" : "VariableDeclaration",
+					"src" : "392:20:0"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "decimals",
+						"scope" : 384,
+						"stateVariable" : true,
+						"storageLocation" : "default",
+						"type" : "uint8",
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "uint8",
+								"type" : "uint8"
+							},
+							"id" : 18,
+							"name" : "ElementaryTypeName",
+							"src" : "418:5:0"
+						},
+						{
+							"attributes" : 
+							{
+								"argumentTypes" : null,
+								"hexvalue" : "3138",
+								"isConstant" : false,
+								"isLValue" : false,
+								"isPure" : true,
+								"lValueRequested" : false,
+								"subdenomination" : null,
+								"token" : "number",
+								"type" : "int_const 18",
+								"value" : "18"
+							},
+							"id" : 19,
+							"name" : "Literal",
+							"src" : "442:2:0"
+						}
+					],
+					"id" : 20,
+					"name" : "VariableDeclaration",
+					"src" : "418:26:0"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "totalSupply",
+						"scope" : 384,
+						"stateVariable" : true,
+						"storageLocation" : "default",
+						"type" : "uint256",
+						"value" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"name" : "uint256",
+								"type" : "uint256"
+							},
+							"id" : 21,
+							"name" : "ElementaryTypeName",
+							"src" : "522:7:0"
+						}
+					],
+					"id" : 22,
+					"name" : "VariableDeclaration",
+					"src" : "522:26:0"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "balanceOf",
+						"scope" : 384,
+						"stateVariable" : true,
+						"storageLocation" : "default",
+						"type" : "mapping(address => uint256)",
+						"value" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"type" : "mapping(address => uint256)"
+							},
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "address",
+										"type" : "address"
+									},
+									"id" : 23,
+									"name" : "ElementaryTypeName",
+									"src" : "611:7:0"
+								},
+								{
+									"attributes" : 
+									{
+										"name" : "uint256",
+										"type" : "uint256"
+									},
+									"id" : 24,
+									"name" : "ElementaryTypeName",
+									"src" : "622:7:0"
+								}
+							],
+							"id" : 25,
+							"name" : "Mapping",
+							"src" : "602:28:0"
+						}
+					],
+					"id" : 26,
+					"name" : "VariableDeclaration",
+					"src" : "602:45:0"
+				},
+				{
+					"attributes" : 
+					{
+						"constant" : false,
+						"name" : "allowance",
+						"scope" : 384,
+						"stateVariable" : true,
+						"storageLocation" : "default",
+						"type" : "mapping(address => mapping(address => uint256))",
+						"value" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"attributes" : 
+							{
+								"type" : "mapping(address => mapping(address => uint256))"
+							},
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"name" : "address",
+										"type" : "address"
+									},
+									"id" : 27,
+									"name" : "ElementaryTypeName",
+									"src" : "662:7:0"
+								},
+								{
+									"attributes" : 
+									{
+										"type" : "mapping(address => uint256)"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"type" : "address"
+											},
+											"id" : 28,
+											"name" : "ElementaryTypeName",
+											"src" : "682:7:0"
+										},
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 29,
+											"name" : "ElementaryTypeName",
+											"src" : "693:7:0"
+										}
+									],
+									"id" : 30,
+									"name" : "Mapping",
+									"src" : "673:28:0"
+								}
+							],
+							"id" : 31,
+							"name" : "Mapping",
+							"src" : "653:49:0"
+						}
+					],
+					"id" : 32,
+					"name" : "VariableDeclaration",
+					"src" : "653:66:0"
+				},
+				{
+					"attributes" : 
+					{
+						"anonymous" : false,
+						"documentation" : null,
+						"name" : "Transfer"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"indexed" : true,
+										"name" : "from",
+										"scope" : 40,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 33,
+											"name" : "ElementaryTypeName",
+											"src" : "821:7:0"
+										}
+									],
+									"id" : 34,
+									"name" : "VariableDeclaration",
+									"src" : "821:20:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"indexed" : true,
+										"name" : "to",
+										"scope" : 40,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 35,
+											"name" : "ElementaryTypeName",
+											"src" : "843:7:0"
+										}
+									],
+									"id" : 36,
+									"name" : "VariableDeclaration",
+									"src" : "843:18:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"indexed" : false,
+										"name" : "value",
+										"scope" : 40,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 37,
+											"name" : "ElementaryTypeName",
+											"src" : "863:7:0"
+										}
+									],
+									"id" : 38,
+									"name" : "VariableDeclaration",
+									"src" : "863:13:0"
+								}
+							],
+							"id" : 39,
+							"name" : "ParameterList",
+							"src" : "820:57:0"
+						}
+					],
+					"id" : 40,
+					"name" : "EventDefinition",
+					"src" : "806:72:0"
+				},
+				{
+					"attributes" : 
+					{
+						"anonymous" : false,
+						"documentation" : null,
+						"name" : "Approval"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"indexed" : true,
+										"name" : "_owner",
+										"scope" : 48,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 41,
+											"name" : "ElementaryTypeName",
+											"src" : "983:7:0"
+										}
+									],
+									"id" : 42,
+									"name" : "VariableDeclaration",
+									"src" : "983:22:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"indexed" : true,
+										"name" : "_spender",
+										"scope" : 48,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 43,
+											"name" : "ElementaryTypeName",
+											"src" : "1007:7:0"
+										}
+									],
+									"id" : 44,
+									"name" : "VariableDeclaration",
+									"src" : "1007:24:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"indexed" : false,
+										"name" : "_value",
+										"scope" : 48,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 45,
+											"name" : "ElementaryTypeName",
+											"src" : "1033:7:0"
+										}
+									],
+									"id" : 46,
+									"name" : "VariableDeclaration",
+									"src" : "1033:14:0"
+								}
+							],
+							"id" : 47,
+							"name" : "ParameterList",
+							"src" : "982:66:0"
+						}
+					],
+					"id" : 48,
+					"name" : "EventDefinition",
+					"src" : "968:81:0"
+				},
+				{
+					"attributes" : 
+					{
+						"anonymous" : false,
+						"documentation" : null,
+						"name" : "Burn"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"indexed" : true,
+										"name" : "from",
+										"scope" : 54,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 49,
+											"name" : "ElementaryTypeName",
+											"src" : "1118:7:0"
+										}
+									],
+									"id" : 50,
+									"name" : "VariableDeclaration",
+									"src" : "1118:20:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"indexed" : false,
+										"name" : "value",
+										"scope" : 54,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 51,
+											"name" : "ElementaryTypeName",
+											"src" : "1140:7:0"
+										}
+									],
+									"id" : 52,
+									"name" : "VariableDeclaration",
+									"src" : "1140:13:0"
+								}
+							],
+							"id" : 53,
+							"name" : "ParameterList",
+							"src" : "1117:37:0"
+						}
+					],
+					"id" : 54,
+					"name" : "EventDefinition",
+					"src" : "1107:48:0"
+				},
+				{
+					"attributes" : 
+					{
+						"documentation" : "Constructor function\n     * Initializes contract with initial supply tokens to the creator of the contract",
+						"implemented" : true,
+						"isConstructor" : true,
+						"kind" : "constructor",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "",
+						"scope" : 384,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "initialSupply",
+										"scope" : 89,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 55,
+											"name" : "ElementaryTypeName",
+											"src" : "1319:7:0"
+										}
+									],
+									"id" : 56,
+									"name" : "VariableDeclaration",
+									"src" : "1319:21:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "tokenName",
+										"scope" : 89,
+										"stateVariable" : false,
+										"storageLocation" : "memory",
+										"type" : "string",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "string",
+												"type" : "string"
+											},
+											"id" : 57,
+											"name" : "ElementaryTypeName",
+											"src" : "1350:6:0"
+										}
+									],
+									"id" : 58,
+									"name" : "VariableDeclaration",
+									"src" : "1350:23:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "tokenSymbol",
+										"scope" : 89,
+										"stateVariable" : false,
+										"storageLocation" : "memory",
+										"type" : "string",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "string",
+												"type" : "string"
+											},
+											"id" : 59,
+											"name" : "ElementaryTypeName",
+											"src" : "1383:6:0"
+										}
+									],
+									"id" : 60,
+									"name" : "VariableDeclaration",
+									"src" : "1383:25:0"
+								}
+							],
+							"id" : 61,
+							"name" : "ParameterList",
+							"src" : "1309:105:0"
+						},
+						{
+							"attributes" : 
+							{
+								"parameters" : 
+								[
+									null
+								]
+							},
+							"children" : [],
+							"id" : 62,
+							"name" : "ParameterList",
+							"src" : "1422:0:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 22,
+														"type" : "uint256",
+														"value" : "totalSupply"
+													},
+													"id" : 63,
+													"name" : "Identifier",
+													"src" : "1432:11:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_uint256",
+															"typeString" : "uint256"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : "*",
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 56,
+																"type" : "uint256",
+																"value" : "initialSupply"
+															},
+															"id" : 64,
+															"name" : "Identifier",
+															"src" : "1446:13:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"commonType" : 
+																{
+																	"typeIdentifier" : "t_uint256",
+																	"typeString" : "uint256"
+																},
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"operator" : "**",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"hexvalue" : "3130",
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : true,
+																		"lValueRequested" : false,
+																		"subdenomination" : null,
+																		"token" : "number",
+																		"type" : "int_const 10",
+																		"value" : "10"
+																	},
+																	"id" : 65,
+																	"name" : "Literal",
+																	"src" : "1462:2:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : false,
+																		"isStructConstructorCall" : false,
+																		"lValueRequested" : false,
+																		"names" : 
+																		[
+																			null
+																		],
+																		"type" : "uint256",
+																		"type_conversion" : true
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : 
+																				[
+																					{
+																						"typeIdentifier" : "t_uint8",
+																						"typeString" : "uint8"
+																					}
+																				],
+																				"isConstant" : false,
+																				"isLValue" : false,
+																				"isPure" : true,
+																				"lValueRequested" : false,
+																				"type" : "type(uint256)",
+																				"value" : "uint256"
+																			},
+																			"id" : 66,
+																			"name" : "ElementaryTypeNameExpression",
+																			"src" : "1468:7:0"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 20,
+																				"type" : "uint8",
+																				"value" : "decimals"
+																			},
+																			"id" : 67,
+																			"name" : "Identifier",
+																			"src" : "1476:8:0"
+																		}
+																	],
+																	"id" : 68,
+																	"name" : "FunctionCall",
+																	"src" : "1468:17:0"
+																}
+															],
+															"id" : 69,
+															"name" : "BinaryOperation",
+															"src" : "1462:23:0"
+														}
+													],
+													"id" : 70,
+													"name" : "BinaryOperation",
+													"src" : "1446:39:0"
+												}
+											],
+											"id" : 71,
+											"name" : "Assignment",
+											"src" : "1432:53:0"
+										}
+									],
+									"id" : 72,
+									"name" : "ExpressionStatement",
+									"src" : "1432:53:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : true,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 26,
+																"type" : "mapping(address => uint256)",
+																"value" : "balanceOf"
+															},
+															"id" : 73,
+															"name" : "Identifier",
+															"src" : "1543:9:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"member_name" : "sender",
+																"referencedDeclaration" : null,
+																"type" : "address payable"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 399,
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 74,
+																	"name" : "Identifier",
+																	"src" : "1553:3:0"
+																}
+															],
+															"id" : 75,
+															"name" : "MemberAccess",
+															"src" : "1553:10:0"
+														}
+													],
+													"id" : 76,
+													"name" : "IndexAccess",
+													"src" : "1543:21:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 22,
+														"type" : "uint256",
+														"value" : "totalSupply"
+													},
+													"id" : 77,
+													"name" : "Identifier",
+													"src" : "1567:11:0"
+												}
+											],
+											"id" : 78,
+											"name" : "Assignment",
+											"src" : "1543:35:0"
+										}
+									],
+									"id" : 79,
+									"name" : "ExpressionStatement",
+									"src" : "1543:35:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "=",
+												"type" : "string storage ref"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 15,
+														"type" : "string storage ref",
+														"value" : "name"
+													},
+													"id" : 80,
+													"name" : "Identifier",
+													"src" : "1642:4:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 58,
+														"type" : "string memory",
+														"value" : "tokenName"
+													},
+													"id" : 81,
+													"name" : "Identifier",
+													"src" : "1649:9:0"
+												}
+											],
+											"id" : 82,
+											"name" : "Assignment",
+											"src" : "1642:16:0"
+										}
+									],
+									"id" : 83,
+									"name" : "ExpressionStatement",
+									"src" : "1642:16:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "=",
+												"type" : "string storage ref"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 17,
+														"type" : "string storage ref",
+														"value" : "symbol"
+													},
+													"id" : 84,
+													"name" : "Identifier",
+													"src" : "1739:6:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 60,
+														"type" : "string memory",
+														"value" : "tokenSymbol"
+													},
+													"id" : 85,
+													"name" : "Identifier",
+													"src" : "1748:11:0"
+												}
+											],
+											"id" : 86,
+											"name" : "Assignment",
+											"src" : "1739:20:0"
+										}
+									],
+									"id" : 87,
+									"name" : "ExpressionStatement",
+									"src" : "1739:20:0"
+								}
+							],
+							"id" : 88,
+							"name" : "Block",
+							"src" : "1422:413:0"
+						}
+					],
+					"id" : 89,
+					"name" : "FunctionDefinition",
+					"src" : "1298:537:0"
+				},
+				{
+					"attributes" : 
+					{
+						"documentation" : "Internal transfer, only can be called by this contract",
+						"implemented" : true,
+						"isConstructor" : false,
+						"kind" : "function",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "_transfer",
+						"scope" : 384,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "internal"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_from",
+										"scope" : 167,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 90,
+											"name" : "ElementaryTypeName",
+											"src" : "1938:7:0"
+										}
+									],
+									"id" : 91,
+									"name" : "VariableDeclaration",
+									"src" : "1938:13:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_to",
+										"scope" : 167,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 92,
+											"name" : "ElementaryTypeName",
+											"src" : "1953:7:0"
+										}
+									],
+									"id" : 93,
+									"name" : "VariableDeclaration",
+									"src" : "1953:11:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_value",
+										"scope" : 167,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint",
+												"type" : "uint256"
+											},
+											"id" : 94,
+											"name" : "ElementaryTypeName",
+											"src" : "1966:4:0"
+										}
+									],
+									"id" : 95,
+									"name" : "VariableDeclaration",
+									"src" : "1966:11:0"
+								}
+							],
+							"id" : 96,
+							"name" : "ParameterList",
+							"src" : "1937:41:0"
+						},
+						{
+							"attributes" : 
+							{
+								"parameters" : 
+								[
+									null
+								]
+							},
+							"children" : [],
+							"id" : 97,
+							"name" : "ParameterList",
+							"src" : "1988:0:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															402,
+															403
+														],
+														"referencedDeclaration" : 402,
+														"type" : "function (bool) pure",
+														"value" : "require"
+													},
+													"id" : 98,
+													"name" : "Identifier",
+													"src" : "2061:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_address",
+															"typeString" : "address"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : "!=",
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 93,
+																"type" : "address",
+																"value" : "_to"
+															},
+															"id" : 99,
+															"name" : "Identifier",
+															"src" : "2069:3:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : true,
+																"isStructConstructorCall" : false,
+																"lValueRequested" : false,
+																"names" : 
+																[
+																	null
+																],
+																"type" : "address payable",
+																"type_conversion" : true
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : 
+																		[
+																			{
+																				"typeIdentifier" : "t_rational_0_by_1",
+																				"typeString" : "int_const 0"
+																			}
+																		],
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : true,
+																		"lValueRequested" : false,
+																		"type" : "type(address)",
+																		"value" : "address"
+																	},
+																	"id" : 100,
+																	"name" : "ElementaryTypeNameExpression",
+																	"src" : "2076:7:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"hexvalue" : "307830",
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : true,
+																		"lValueRequested" : false,
+																		"subdenomination" : null,
+																		"token" : "number",
+																		"type" : "int_const 0",
+																		"value" : "0x0"
+																	},
+																	"id" : 101,
+																	"name" : "Literal",
+																	"src" : "2084:3:0"
+																}
+															],
+															"id" : 102,
+															"name" : "FunctionCall",
+															"src" : "2076:12:0"
+														}
+													],
+													"id" : 103,
+													"name" : "BinaryOperation",
+													"src" : "2069:19:0"
+												}
+											],
+											"id" : 104,
+											"name" : "FunctionCall",
+											"src" : "2061:28:0"
+										}
+									],
+									"id" : 105,
+									"name" : "ExpressionStatement",
+									"src" : "2061:28:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															402,
+															403
+														],
+														"referencedDeclaration" : 402,
+														"type" : "function (bool) pure",
+														"value" : "require"
+													},
+													"id" : 106,
+													"name" : "Identifier",
+													"src" : "2141:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_uint256",
+															"typeString" : "uint256"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : ">=",
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 26,
+																		"type" : "mapping(address => uint256)",
+																		"value" : "balanceOf"
+																	},
+																	"id" : 107,
+																	"name" : "Identifier",
+																	"src" : "2149:9:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 91,
+																		"type" : "address",
+																		"value" : "_from"
+																	},
+																	"id" : 108,
+																	"name" : "Identifier",
+																	"src" : "2159:5:0"
+																}
+															],
+															"id" : 109,
+															"name" : "IndexAccess",
+															"src" : "2149:16:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 95,
+																"type" : "uint256",
+																"value" : "_value"
+															},
+															"id" : 110,
+															"name" : "Identifier",
+															"src" : "2169:6:0"
+														}
+													],
+													"id" : 111,
+													"name" : "BinaryOperation",
+													"src" : "2149:26:0"
+												}
+											],
+											"id" : 112,
+											"name" : "FunctionCall",
+											"src" : "2141:35:0"
+										}
+									],
+									"id" : 113,
+									"name" : "ExpressionStatement",
+									"src" : "2141:35:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															402,
+															403
+														],
+														"referencedDeclaration" : 402,
+														"type" : "function (bool) pure",
+														"value" : "require"
+													},
+													"id" : 114,
+													"name" : "Identifier",
+													"src" : "2217:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_uint256",
+															"typeString" : "uint256"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : ">=",
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"commonType" : 
+																{
+																	"typeIdentifier" : "t_uint256",
+																	"typeString" : "uint256"
+																},
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"operator" : "+",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : true,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 26,
+																				"type" : "mapping(address => uint256)",
+																				"value" : "balanceOf"
+																			},
+																			"id" : 115,
+																			"name" : "Identifier",
+																			"src" : "2225:9:0"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 93,
+																				"type" : "address",
+																				"value" : "_to"
+																			},
+																			"id" : 116,
+																			"name" : "Identifier",
+																			"src" : "2235:3:0"
+																		}
+																	],
+																	"id" : 117,
+																	"name" : "IndexAccess",
+																	"src" : "2225:14:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 95,
+																		"type" : "uint256",
+																		"value" : "_value"
+																	},
+																	"id" : 118,
+																	"name" : "Identifier",
+																	"src" : "2242:6:0"
+																}
+															],
+															"id" : 119,
+															"name" : "BinaryOperation",
+															"src" : "2225:23:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 26,
+																		"type" : "mapping(address => uint256)",
+																		"value" : "balanceOf"
+																	},
+																	"id" : 120,
+																	"name" : "Identifier",
+																	"src" : "2252:9:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 93,
+																		"type" : "address",
+																		"value" : "_to"
+																	},
+																	"id" : 121,
+																	"name" : "Identifier",
+																	"src" : "2262:3:0"
+																}
+															],
+															"id" : 122,
+															"name" : "IndexAccess",
+															"src" : "2252:14:0"
+														}
+													],
+													"id" : 123,
+													"name" : "BinaryOperation",
+													"src" : "2225:41:0"
+												}
+											],
+											"id" : 124,
+											"name" : "FunctionCall",
+											"src" : "2217:50:0"
+										}
+									],
+									"id" : 125,
+									"name" : "ExpressionStatement",
+									"src" : "2217:50:0"
+								},
+								{
+									"attributes" : 
+									{
+										"assignments" : 
+										[
+											127
+										]
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"constant" : false,
+												"name" : "previousBalances",
+												"scope" : 166,
+												"stateVariable" : false,
+												"storageLocation" : "default",
+												"type" : "uint256",
+												"value" : null,
+												"visibility" : "internal"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"name" : "uint",
+														"type" : "uint256"
+													},
+													"id" : 126,
+													"name" : "ElementaryTypeName",
+													"src" : "2329:4:0"
+												}
+											],
+											"id" : 127,
+											"name" : "VariableDeclaration",
+											"src" : "2329:21:0"
+										},
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"commonType" : 
+												{
+													"typeIdentifier" : "t_uint256",
+													"typeString" : "uint256"
+												},
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "+",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 26,
+																"type" : "mapping(address => uint256)",
+																"value" : "balanceOf"
+															},
+															"id" : 128,
+															"name" : "Identifier",
+															"src" : "2353:9:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 91,
+																"type" : "address",
+																"value" : "_from"
+															},
+															"id" : 129,
+															"name" : "Identifier",
+															"src" : "2363:5:0"
+														}
+													],
+													"id" : 130,
+													"name" : "IndexAccess",
+													"src" : "2353:16:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 26,
+																"type" : "mapping(address => uint256)",
+																"value" : "balanceOf"
+															},
+															"id" : 131,
+															"name" : "Identifier",
+															"src" : "2372:9:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 93,
+																"type" : "address",
+																"value" : "_to"
+															},
+															"id" : 132,
+															"name" : "Identifier",
+															"src" : "2382:3:0"
+														}
+													],
+													"id" : 133,
+													"name" : "IndexAccess",
+													"src" : "2372:14:0"
+												}
+											],
+											"id" : 134,
+											"name" : "BinaryOperation",
+											"src" : "2353:33:0"
+										}
+									],
+									"id" : 135,
+									"name" : "VariableDeclarationStatement",
+									"src" : "2329:57:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "-=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : true,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 26,
+																"type" : "mapping(address => uint256)",
+																"value" : "balanceOf"
+															},
+															"id" : 136,
+															"name" : "Identifier",
+															"src" : "2432:9:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 91,
+																"type" : "address",
+																"value" : "_from"
+															},
+															"id" : 137,
+															"name" : "Identifier",
+															"src" : "2442:5:0"
+														}
+													],
+													"id" : 138,
+													"name" : "IndexAccess",
+													"src" : "2432:16:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 95,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 139,
+													"name" : "Identifier",
+													"src" : "2452:6:0"
+												}
+											],
+											"id" : 140,
+											"name" : "Assignment",
+											"src" : "2432:26:0"
+										}
+									],
+									"id" : 141,
+									"name" : "ExpressionStatement",
+									"src" : "2432:26:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "+=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : true,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 26,
+																"type" : "mapping(address => uint256)",
+																"value" : "balanceOf"
+															},
+															"id" : 142,
+															"name" : "Identifier",
+															"src" : "2509:9:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 93,
+																"type" : "address",
+																"value" : "_to"
+															},
+															"id" : 143,
+															"name" : "Identifier",
+															"src" : "2519:3:0"
+														}
+													],
+													"id" : 144,
+													"name" : "IndexAccess",
+													"src" : "2509:14:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 95,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 145,
+													"name" : "Identifier",
+													"src" : "2527:6:0"
+												}
+											],
+											"id" : 146,
+											"name" : "Assignment",
+											"src" : "2509:24:0"
+										}
+									],
+									"id" : 147,
+									"name" : "ExpressionStatement",
+									"src" : "2509:24:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															},
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															},
+															{
+																"typeIdentifier" : "t_uint256",
+																"typeString" : "uint256"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 40,
+														"type" : "function (address,address,uint256)",
+														"value" : "Transfer"
+													},
+													"id" : 148,
+													"name" : "Identifier",
+													"src" : "2548:8:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 91,
+														"type" : "address",
+														"value" : "_from"
+													},
+													"id" : 149,
+													"name" : "Identifier",
+													"src" : "2557:5:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 93,
+														"type" : "address",
+														"value" : "_to"
+													},
+													"id" : 150,
+													"name" : "Identifier",
+													"src" : "2564:3:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 95,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 151,
+													"name" : "Identifier",
+													"src" : "2569:6:0"
+												}
+											],
+											"id" : 152,
+											"name" : "FunctionCall",
+											"src" : "2548:28:0"
+										}
+									],
+									"id" : 153,
+									"name" : "EmitStatement",
+									"src" : "2543:33:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 388,
+														"type" : "function (bool) pure",
+														"value" : "assert"
+													},
+													"id" : 154,
+													"name" : "Identifier",
+													"src" : "2687:6:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_uint256",
+															"typeString" : "uint256"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : "==",
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"commonType" : 
+																{
+																	"typeIdentifier" : "t_uint256",
+																	"typeString" : "uint256"
+																},
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"operator" : "+",
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : true,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 26,
+																				"type" : "mapping(address => uint256)",
+																				"value" : "balanceOf"
+																			},
+																			"id" : 155,
+																			"name" : "Identifier",
+																			"src" : "2694:9:0"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 91,
+																				"type" : "address",
+																				"value" : "_from"
+																			},
+																			"id" : 156,
+																			"name" : "Identifier",
+																			"src" : "2704:5:0"
+																		}
+																	],
+																	"id" : 157,
+																	"name" : "IndexAccess",
+																	"src" : "2694:16:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : true,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"type" : "uint256"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 26,
+																				"type" : "mapping(address => uint256)",
+																				"value" : "balanceOf"
+																			},
+																			"id" : 158,
+																			"name" : "Identifier",
+																			"src" : "2713:9:0"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 93,
+																				"type" : "address",
+																				"value" : "_to"
+																			},
+																			"id" : 159,
+																			"name" : "Identifier",
+																			"src" : "2723:3:0"
+																		}
+																	],
+																	"id" : 160,
+																	"name" : "IndexAccess",
+																	"src" : "2713:14:0"
+																}
+															],
+															"id" : 161,
+															"name" : "BinaryOperation",
+															"src" : "2694:33:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 127,
+																"type" : "uint256",
+																"value" : "previousBalances"
+															},
+															"id" : 162,
+															"name" : "Identifier",
+															"src" : "2731:16:0"
+														}
+													],
+													"id" : 163,
+													"name" : "BinaryOperation",
+													"src" : "2694:53:0"
+												}
+											],
+											"id" : 164,
+											"name" : "FunctionCall",
+											"src" : "2687:61:0"
+										}
+									],
+									"id" : 165,
+									"name" : "ExpressionStatement",
+									"src" : "2687:61:0"
+								}
+							],
+							"id" : 166,
+							"name" : "Block",
+							"src" : "1988:767:0"
+						}
+					],
+					"id" : 167,
+					"name" : "FunctionDefinition",
+					"src" : "1919:836:0"
+				},
+				{
+					"attributes" : 
+					{
+						"documentation" : "Transfer tokens\n     * Send `_value` tokens to `_to` from your account\n     * @param _to The address of the recipient\n@param _value the amount to send",
+						"implemented" : true,
+						"isConstructor" : false,
+						"kind" : "function",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "transfer",
+						"scope" : 384,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_to",
+										"scope" : 186,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 168,
+											"name" : "ElementaryTypeName",
+											"src" : "2974:7:0"
+										}
+									],
+									"id" : 169,
+									"name" : "VariableDeclaration",
+									"src" : "2974:11:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_value",
+										"scope" : 186,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 170,
+											"name" : "ElementaryTypeName",
+											"src" : "2987:7:0"
+										}
+									],
+									"id" : 171,
+									"name" : "VariableDeclaration",
+									"src" : "2987:14:0"
+								}
+							],
+							"id" : 172,
+							"name" : "ParameterList",
+							"src" : "2973:29:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "success",
+										"scope" : 186,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "bool",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bool",
+												"type" : "bool"
+											},
+											"id" : 173,
+											"name" : "ElementaryTypeName",
+											"src" : "3019:4:0"
+										}
+									],
+									"id" : 174,
+									"name" : "VariableDeclaration",
+									"src" : "3019:12:0"
+								}
+							],
+							"id" : 175,
+							"name" : "ParameterList",
+							"src" : "3018:14:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_address_payable",
+																"typeString" : "address payable"
+															},
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															},
+															{
+																"typeIdentifier" : "t_uint256",
+																"typeString" : "uint256"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 167,
+														"type" : "function (address,address,uint256)",
+														"value" : "_transfer"
+													},
+													"id" : 176,
+													"name" : "Identifier",
+													"src" : "3043:9:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"member_name" : "sender",
+														"referencedDeclaration" : null,
+														"type" : "address payable"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 399,
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 177,
+															"name" : "Identifier",
+															"src" : "3053:3:0"
+														}
+													],
+													"id" : 178,
+													"name" : "MemberAccess",
+													"src" : "3053:10:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 169,
+														"type" : "address",
+														"value" : "_to"
+													},
+													"id" : 179,
+													"name" : "Identifier",
+													"src" : "3065:3:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 171,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 180,
+													"name" : "Identifier",
+													"src" : "3070:6:0"
+												}
+											],
+											"id" : 181,
+											"name" : "FunctionCall",
+											"src" : "3043:34:0"
+										}
+									],
+									"id" : 182,
+									"name" : "ExpressionStatement",
+									"src" : "3043:34:0"
+								},
+								{
+									"attributes" : 
+									{
+										"functionReturnParameters" : 175
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"hexvalue" : "74727565",
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : true,
+												"lValueRequested" : false,
+												"subdenomination" : null,
+												"token" : "bool",
+												"type" : "bool",
+												"value" : "true"
+											},
+											"id" : 183,
+											"name" : "Literal",
+											"src" : "3094:4:0"
+										}
+									],
+									"id" : 184,
+									"name" : "Return",
+									"src" : "3087:11:0"
+								}
+							],
+							"id" : 185,
+							"name" : "Block",
+							"src" : "3033:72:0"
+						}
+					],
+					"id" : 186,
+					"name" : "FunctionDefinition",
+					"src" : "2956:149:0"
+				},
+				{
+					"attributes" : 
+					{
+						"documentation" : "Transfer tokens from other address\n     * Send `_value` tokens to `_to` on behalf of `_from`\n     * @param _from The address of the sender\n@param _to The address of the recipient\n@param _value the amount to send",
+						"implemented" : true,
+						"isConstructor" : false,
+						"kind" : "function",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "transferFrom",
+						"scope" : 384,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_from",
+										"scope" : 226,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 187,
+											"name" : "ElementaryTypeName",
+											"src" : "3396:7:0"
+										}
+									],
+									"id" : 188,
+									"name" : "VariableDeclaration",
+									"src" : "3396:13:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_to",
+										"scope" : 226,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 189,
+											"name" : "ElementaryTypeName",
+											"src" : "3411:7:0"
+										}
+									],
+									"id" : 190,
+									"name" : "VariableDeclaration",
+									"src" : "3411:11:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_value",
+										"scope" : 226,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 191,
+											"name" : "ElementaryTypeName",
+											"src" : "3424:7:0"
+										}
+									],
+									"id" : 192,
+									"name" : "VariableDeclaration",
+									"src" : "3424:14:0"
+								}
+							],
+							"id" : 193,
+							"name" : "ParameterList",
+							"src" : "3395:44:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "success",
+										"scope" : 226,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "bool",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bool",
+												"type" : "bool"
+											},
+											"id" : 194,
+											"name" : "ElementaryTypeName",
+											"src" : "3456:4:0"
+										}
+									],
+									"id" : 195,
+									"name" : "VariableDeclaration",
+									"src" : "3456:12:0"
+								}
+							],
+							"id" : 196,
+							"name" : "ParameterList",
+							"src" : "3455:14:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															402,
+															403
+														],
+														"referencedDeclaration" : 402,
+														"type" : "function (bool) pure",
+														"value" : "require"
+													},
+													"id" : 197,
+													"name" : "Identifier",
+													"src" : "3480:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_uint256",
+															"typeString" : "uint256"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : "<=",
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 192,
+																"type" : "uint256",
+																"value" : "_value"
+															},
+															"id" : 198,
+															"name" : "Identifier",
+															"src" : "3488:6:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : true,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"type" : "mapping(address => uint256)"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 32,
+																				"type" : "mapping(address => mapping(address => uint256))",
+																				"value" : "allowance"
+																			},
+																			"id" : 199,
+																			"name" : "Identifier",
+																			"src" : "3498:9:0"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 188,
+																				"type" : "address",
+																				"value" : "_from"
+																			},
+																			"id" : 200,
+																			"name" : "Identifier",
+																			"src" : "3508:5:0"
+																		}
+																	],
+																	"id" : 201,
+																	"name" : "IndexAccess",
+																	"src" : "3498:16:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"member_name" : "sender",
+																		"referencedDeclaration" : null,
+																		"type" : "address payable"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 399,
+																				"type" : "msg",
+																				"value" : "msg"
+																			},
+																			"id" : 202,
+																			"name" : "Identifier",
+																			"src" : "3515:3:0"
+																		}
+																	],
+																	"id" : 203,
+																	"name" : "MemberAccess",
+																	"src" : "3515:10:0"
+																}
+															],
+															"id" : 204,
+															"name" : "IndexAccess",
+															"src" : "3498:28:0"
+														}
+													],
+													"id" : 205,
+													"name" : "BinaryOperation",
+													"src" : "3488:38:0"
+												}
+											],
+											"id" : 206,
+											"name" : "FunctionCall",
+											"src" : "3480:47:0"
+										}
+									],
+									"id" : 207,
+									"name" : "ExpressionStatement",
+									"src" : "3480:47:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "-=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : true,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "mapping(address => uint256)"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 32,
+																		"type" : "mapping(address => mapping(address => uint256))",
+																		"value" : "allowance"
+																	},
+																	"id" : 208,
+																	"name" : "Identifier",
+																	"src" : "3560:9:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 188,
+																		"type" : "address",
+																		"value" : "_from"
+																	},
+																	"id" : 209,
+																	"name" : "Identifier",
+																	"src" : "3570:5:0"
+																}
+															],
+															"id" : 212,
+															"name" : "IndexAccess",
+															"src" : "3560:16:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"member_name" : "sender",
+																"referencedDeclaration" : null,
+																"type" : "address payable"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 399,
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 210,
+																	"name" : "Identifier",
+																	"src" : "3577:3:0"
+																}
+															],
+															"id" : 211,
+															"name" : "MemberAccess",
+															"src" : "3577:10:0"
+														}
+													],
+													"id" : 213,
+													"name" : "IndexAccess",
+													"src" : "3560:28:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 192,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 214,
+													"name" : "Identifier",
+													"src" : "3592:6:0"
+												}
+											],
+											"id" : 215,
+											"name" : "Assignment",
+											"src" : "3560:38:0"
+										}
+									],
+									"id" : 216,
+									"name" : "ExpressionStatement",
+									"src" : "3560:38:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															},
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															},
+															{
+																"typeIdentifier" : "t_uint256",
+																"typeString" : "uint256"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 167,
+														"type" : "function (address,address,uint256)",
+														"value" : "_transfer"
+													},
+													"id" : 217,
+													"name" : "Identifier",
+													"src" : "3608:9:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 188,
+														"type" : "address",
+														"value" : "_from"
+													},
+													"id" : 218,
+													"name" : "Identifier",
+													"src" : "3618:5:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 190,
+														"type" : "address",
+														"value" : "_to"
+													},
+													"id" : 219,
+													"name" : "Identifier",
+													"src" : "3625:3:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 192,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 220,
+													"name" : "Identifier",
+													"src" : "3630:6:0"
+												}
+											],
+											"id" : 221,
+											"name" : "FunctionCall",
+											"src" : "3608:29:0"
+										}
+									],
+									"id" : 222,
+									"name" : "ExpressionStatement",
+									"src" : "3608:29:0"
+								},
+								{
+									"attributes" : 
+									{
+										"functionReturnParameters" : 196
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"hexvalue" : "74727565",
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : true,
+												"lValueRequested" : false,
+												"subdenomination" : null,
+												"token" : "bool",
+												"type" : "bool",
+												"value" : "true"
+											},
+											"id" : 223,
+											"name" : "Literal",
+											"src" : "3654:4:0"
+										}
+									],
+									"id" : 224,
+									"name" : "Return",
+									"src" : "3647:11:0"
+								}
+							],
+							"id" : 225,
+							"name" : "Block",
+							"src" : "3470:195:0"
+						}
+					],
+					"id" : 226,
+					"name" : "FunctionDefinition",
+					"src" : "3374:291:0"
+				},
+				{
+					"attributes" : 
+					{
+						"documentation" : "Set allowance for other address\n     * Allows `_spender` to spend no more than `_value` tokens on your behalf\n     * @param _spender The address authorized to spend\n@param _value the max amount they can spend",
+						"implemented" : true,
+						"isConstructor" : false,
+						"kind" : "function",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "approve",
+						"scope" : 384,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_spender",
+										"scope" : 254,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 227,
+											"name" : "ElementaryTypeName",
+											"src" : "3941:7:0"
+										}
+									],
+									"id" : 228,
+									"name" : "VariableDeclaration",
+									"src" : "3941:16:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_value",
+										"scope" : 254,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 229,
+											"name" : "ElementaryTypeName",
+											"src" : "3959:7:0"
+										}
+									],
+									"id" : 230,
+									"name" : "VariableDeclaration",
+									"src" : "3959:14:0"
+								}
+							],
+							"id" : 231,
+							"name" : "ParameterList",
+							"src" : "3940:34:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "success",
+										"scope" : 254,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "bool",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bool",
+												"type" : "bool"
+											},
+											"id" : 232,
+											"name" : "ElementaryTypeName",
+											"src" : "3999:4:0"
+										}
+									],
+									"id" : 233,
+									"name" : "VariableDeclaration",
+									"src" : "3999:12:0"
+								}
+							],
+							"id" : 234,
+							"name" : "ParameterList",
+							"src" : "3998:14:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : true,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "mapping(address => uint256)"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 32,
+																		"type" : "mapping(address => mapping(address => uint256))",
+																		"value" : "allowance"
+																	},
+																	"id" : 235,
+																	"name" : "Identifier",
+																	"src" : "4023:9:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"member_name" : "sender",
+																		"referencedDeclaration" : null,
+																		"type" : "address payable"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 399,
+																				"type" : "msg",
+																				"value" : "msg"
+																			},
+																			"id" : 236,
+																			"name" : "Identifier",
+																			"src" : "4033:3:0"
+																		}
+																	],
+																	"id" : 237,
+																	"name" : "MemberAccess",
+																	"src" : "4033:10:0"
+																}
+															],
+															"id" : 239,
+															"name" : "IndexAccess",
+															"src" : "4023:21:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 228,
+																"type" : "address",
+																"value" : "_spender"
+															},
+															"id" : 238,
+															"name" : "Identifier",
+															"src" : "4045:8:0"
+														}
+													],
+													"id" : 240,
+													"name" : "IndexAccess",
+													"src" : "4023:31:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 230,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 241,
+													"name" : "Identifier",
+													"src" : "4057:6:0"
+												}
+											],
+											"id" : 242,
+											"name" : "Assignment",
+											"src" : "4023:40:0"
+										}
+									],
+									"id" : 243,
+									"name" : "ExpressionStatement",
+									"src" : "4023:40:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_address_payable",
+																"typeString" : "address payable"
+															},
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															},
+															{
+																"typeIdentifier" : "t_uint256",
+																"typeString" : "uint256"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 48,
+														"type" : "function (address,address,uint256)",
+														"value" : "Approval"
+													},
+													"id" : 244,
+													"name" : "Identifier",
+													"src" : "4078:8:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"member_name" : "sender",
+														"referencedDeclaration" : null,
+														"type" : "address payable"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 399,
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 245,
+															"name" : "Identifier",
+															"src" : "4087:3:0"
+														}
+													],
+													"id" : 246,
+													"name" : "MemberAccess",
+													"src" : "4087:10:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 228,
+														"type" : "address",
+														"value" : "_spender"
+													},
+													"id" : 247,
+													"name" : "Identifier",
+													"src" : "4099:8:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 230,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 248,
+													"name" : "Identifier",
+													"src" : "4109:6:0"
+												}
+											],
+											"id" : 249,
+											"name" : "FunctionCall",
+											"src" : "4078:38:0"
+										}
+									],
+									"id" : 250,
+									"name" : "EmitStatement",
+									"src" : "4073:43:0"
+								},
+								{
+									"attributes" : 
+									{
+										"functionReturnParameters" : 234
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"hexvalue" : "74727565",
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : true,
+												"lValueRequested" : false,
+												"subdenomination" : null,
+												"token" : "bool",
+												"type" : "bool",
+												"value" : "true"
+											},
+											"id" : 251,
+											"name" : "Literal",
+											"src" : "4133:4:0"
+										}
+									],
+									"id" : 252,
+									"name" : "Return",
+									"src" : "4126:11:0"
+								}
+							],
+							"id" : 253,
+							"name" : "Block",
+							"src" : "4013:131:0"
+						}
+					],
+					"id" : 254,
+					"name" : "FunctionDefinition",
+					"src" : "3924:220:0"
+				},
+				{
+					"attributes" : 
+					{
+						"documentation" : "Set allowance for other address and notify\n     * Allows `_spender` to spend no more than `_value` tokens on your behalf, and then ping the contract about it\n     * @param _spender The address authorized to spend\n@param _value the max amount they can spend\n@param _extraData some extra information to send to the approved contract",
+						"implemented" : true,
+						"isConstructor" : false,
+						"kind" : "function",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "approveAndCall",
+						"scope" : 384,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_spender",
+										"scope" : 292,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 255,
+											"name" : "ElementaryTypeName",
+											"src" : "4556:7:0"
+										}
+									],
+									"id" : 256,
+									"name" : "VariableDeclaration",
+									"src" : "4556:16:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_value",
+										"scope" : 292,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 257,
+											"name" : "ElementaryTypeName",
+											"src" : "4574:7:0"
+										}
+									],
+									"id" : 258,
+									"name" : "VariableDeclaration",
+									"src" : "4574:14:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_extraData",
+										"scope" : 292,
+										"stateVariable" : false,
+										"storageLocation" : "memory",
+										"type" : "bytes",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bytes",
+												"type" : "bytes"
+											},
+											"id" : 259,
+											"name" : "ElementaryTypeName",
+											"src" : "4590:5:0"
+										}
+									],
+									"id" : 260,
+									"name" : "VariableDeclaration",
+									"src" : "4590:23:0"
+								}
+							],
+							"id" : 261,
+							"name" : "ParameterList",
+							"src" : "4555:59:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "success",
+										"scope" : 292,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "bool",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bool",
+												"type" : "bool"
+											},
+											"id" : 262,
+											"name" : "ElementaryTypeName",
+											"src" : "4647:4:0"
+										}
+									],
+									"id" : 263,
+									"name" : "VariableDeclaration",
+									"src" : "4647:12:0"
+								}
+							],
+							"id" : 264,
+							"name" : "ParameterList",
+							"src" : "4646:14:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"assignments" : 
+										[
+											266
+										]
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"constant" : false,
+												"name" : "spender",
+												"scope" : 291,
+												"stateVariable" : false,
+												"storageLocation" : "default",
+												"type" : "contract tokenRecipient",
+												"value" : null,
+												"visibility" : "internal"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"contractScope" : null,
+														"name" : "tokenRecipient",
+														"referencedDeclaration" : 13,
+														"type" : "contract tokenRecipient"
+													},
+													"id" : 265,
+													"name" : "UserDefinedTypeName",
+													"src" : "4671:14:0"
+												}
+											],
+											"id" : 266,
+											"name" : "VariableDeclaration",
+											"src" : "4671:22:0"
+										},
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "contract tokenRecipient",
+												"type_conversion" : true
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 13,
+														"type" : "type(contract tokenRecipient)",
+														"value" : "tokenRecipient"
+													},
+													"id" : 267,
+													"name" : "Identifier",
+													"src" : "4696:14:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 256,
+														"type" : "address",
+														"value" : "_spender"
+													},
+													"id" : 268,
+													"name" : "Identifier",
+													"src" : "4711:8:0"
+												}
+											],
+											"id" : 269,
+											"name" : "FunctionCall",
+											"src" : "4696:24:0"
+										}
+									],
+									"id" : 270,
+									"name" : "VariableDeclarationStatement",
+									"src" : "4671:49:0"
+								},
+								{
+									"attributes" : 
+									{
+										"falseBody" : null
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "bool",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															},
+															{
+																"typeIdentifier" : "t_uint256",
+																"typeString" : "uint256"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 254,
+														"type" : "function (address,uint256) returns (bool)",
+														"value" : "approve"
+													},
+													"id" : 271,
+													"name" : "Identifier",
+													"src" : "4734:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 256,
+														"type" : "address",
+														"value" : "_spender"
+													},
+													"id" : 272,
+													"name" : "Identifier",
+													"src" : "4742:8:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 258,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 273,
+													"name" : "Identifier",
+													"src" : "4752:6:0"
+												}
+											],
+											"id" : 274,
+											"name" : "FunctionCall",
+											"src" : "4734:25:0"
+										},
+										{
+											"children" : 
+											[
+												{
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"isStructConstructorCall" : false,
+																"lValueRequested" : false,
+																"names" : 
+																[
+																	null
+																],
+																"type" : "tuple()",
+																"type_conversion" : false
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : 
+																		[
+																			{
+																				"typeIdentifier" : "t_address_payable",
+																				"typeString" : "address payable"
+																			},
+																			{
+																				"typeIdentifier" : "t_uint256",
+																				"typeString" : "uint256"
+																			},
+																			{
+																				"typeIdentifier" : "t_address",
+																				"typeString" : "address"
+																			},
+																			{
+																				"typeIdentifier" : "t_bytes_memory_ptr",
+																				"typeString" : "bytes memory"
+																			}
+																		],
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"member_name" : "receiveApproval",
+																		"referencedDeclaration" : 12,
+																		"type" : "function (address,uint256,address,bytes memory) external"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 266,
+																				"type" : "contract tokenRecipient",
+																				"value" : "spender"
+																			},
+																			"id" : 275,
+																			"name" : "Identifier",
+																			"src" : "4775:7:0"
+																		}
+																	],
+																	"id" : 277,
+																	"name" : "MemberAccess",
+																	"src" : "4775:23:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"member_name" : "sender",
+																		"referencedDeclaration" : null,
+																		"type" : "address payable"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 399,
+																				"type" : "msg",
+																				"value" : "msg"
+																			},
+																			"id" : 278,
+																			"name" : "Identifier",
+																			"src" : "4799:3:0"
+																		}
+																	],
+																	"id" : 279,
+																	"name" : "MemberAccess",
+																	"src" : "4799:10:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 258,
+																		"type" : "uint256",
+																		"value" : "_value"
+																	},
+																	"id" : 280,
+																	"name" : "Identifier",
+																	"src" : "4811:6:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : false,
+																		"isStructConstructorCall" : false,
+																		"lValueRequested" : false,
+																		"names" : 
+																		[
+																			null
+																		],
+																		"type" : "address",
+																		"type_conversion" : true
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : 
+																				[
+																					{
+																						"typeIdentifier" : "t_contract$_AO_$384",
+																						"typeString" : "contract AO"
+																					}
+																				],
+																				"isConstant" : false,
+																				"isLValue" : false,
+																				"isPure" : true,
+																				"lValueRequested" : false,
+																				"type" : "type(address)",
+																				"value" : "address"
+																			},
+																			"id" : 281,
+																			"name" : "ElementaryTypeNameExpression",
+																			"src" : "4819:7:0"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 415,
+																				"type" : "contract AO",
+																				"value" : "this"
+																			},
+																			"id" : 282,
+																			"name" : "Identifier",
+																			"src" : "4827:4:0"
+																		}
+																	],
+																	"id" : 283,
+																	"name" : "FunctionCall",
+																	"src" : "4819:13:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 260,
+																		"type" : "bytes memory",
+																		"value" : "_extraData"
+																	},
+																	"id" : 284,
+																	"name" : "Identifier",
+																	"src" : "4834:10:0"
+																}
+															],
+															"id" : 285,
+															"name" : "FunctionCall",
+															"src" : "4775:70:0"
+														}
+													],
+													"id" : 286,
+													"name" : "ExpressionStatement",
+													"src" : "4775:70:0"
+												},
+												{
+													"attributes" : 
+													{
+														"functionReturnParameters" : 264
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"hexvalue" : "74727565",
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : true,
+																"lValueRequested" : false,
+																"subdenomination" : null,
+																"token" : "bool",
+																"type" : "bool",
+																"value" : "true"
+															},
+															"id" : 287,
+															"name" : "Literal",
+															"src" : "4866:4:0"
+														}
+													],
+													"id" : 288,
+													"name" : "Return",
+													"src" : "4859:11:0"
+												}
+											],
+											"id" : 289,
+											"name" : "Block",
+											"src" : "4761:120:0"
+										}
+									],
+									"id" : 290,
+									"name" : "IfStatement",
+									"src" : "4730:151:0"
+								}
+							],
+							"id" : 291,
+							"name" : "Block",
+							"src" : "4661:226:0"
+						}
+					],
+					"id" : 292,
+					"name" : "FunctionDefinition",
+					"src" : "4532:355:0"
+				},
+				{
+					"attributes" : 
+					{
+						"documentation" : "Destroy tokens\n     * Remove `_value` tokens from the system irreversibly\n     * @param _value the amount of money to burn",
+						"implemented" : true,
+						"isConstructor" : false,
+						"kind" : "function",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "burn",
+						"scope" : 384,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_value",
+										"scope" : 328,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 293,
+											"name" : "ElementaryTypeName",
+											"src" : "5067:7:0"
+										}
+									],
+									"id" : 294,
+									"name" : "VariableDeclaration",
+									"src" : "5067:14:0"
+								}
+							],
+							"id" : 295,
+							"name" : "ParameterList",
+							"src" : "5066:16:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "success",
+										"scope" : 328,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "bool",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bool",
+												"type" : "bool"
+											},
+											"id" : 296,
+											"name" : "ElementaryTypeName",
+											"src" : "5099:4:0"
+										}
+									],
+									"id" : 297,
+									"name" : "VariableDeclaration",
+									"src" : "5099:12:0"
+								}
+							],
+							"id" : 298,
+							"name" : "ParameterList",
+							"src" : "5098:14:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															402,
+															403
+														],
+														"referencedDeclaration" : 402,
+														"type" : "function (bool) pure",
+														"value" : "require"
+													},
+													"id" : 299,
+													"name" : "Identifier",
+													"src" : "5123:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_uint256",
+															"typeString" : "uint256"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : ">=",
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 26,
+																		"type" : "mapping(address => uint256)",
+																		"value" : "balanceOf"
+																	},
+																	"id" : 300,
+																	"name" : "Identifier",
+																	"src" : "5131:9:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"member_name" : "sender",
+																		"referencedDeclaration" : null,
+																		"type" : "address payable"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 399,
+																				"type" : "msg",
+																				"value" : "msg"
+																			},
+																			"id" : 301,
+																			"name" : "Identifier",
+																			"src" : "5141:3:0"
+																		}
+																	],
+																	"id" : 302,
+																	"name" : "MemberAccess",
+																	"src" : "5141:10:0"
+																}
+															],
+															"id" : 303,
+															"name" : "IndexAccess",
+															"src" : "5131:21:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 294,
+																"type" : "uint256",
+																"value" : "_value"
+															},
+															"id" : 304,
+															"name" : "Identifier",
+															"src" : "5156:6:0"
+														}
+													],
+													"id" : 305,
+													"name" : "BinaryOperation",
+													"src" : "5131:31:0"
+												}
+											],
+											"id" : 306,
+											"name" : "FunctionCall",
+											"src" : "5123:40:0"
+										}
+									],
+									"id" : 307,
+									"name" : "ExpressionStatement",
+									"src" : "5123:40:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "-=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : true,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 26,
+																"type" : "mapping(address => uint256)",
+																"value" : "balanceOf"
+															},
+															"id" : 308,
+															"name" : "Identifier",
+															"src" : "5209:9:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"member_name" : "sender",
+																"referencedDeclaration" : null,
+																"type" : "address payable"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 399,
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 309,
+																	"name" : "Identifier",
+																	"src" : "5219:3:0"
+																}
+															],
+															"id" : 310,
+															"name" : "MemberAccess",
+															"src" : "5219:10:0"
+														}
+													],
+													"id" : 311,
+													"name" : "IndexAccess",
+													"src" : "5209:21:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 294,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 312,
+													"name" : "Identifier",
+													"src" : "5234:6:0"
+												}
+											],
+											"id" : 313,
+											"name" : "Assignment",
+											"src" : "5209:31:0"
+										}
+									],
+									"id" : 314,
+									"name" : "ExpressionStatement",
+									"src" : "5209:31:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "-=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 22,
+														"type" : "uint256",
+														"value" : "totalSupply"
+													},
+													"id" : 315,
+													"name" : "Identifier",
+													"src" : "5289:11:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 294,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 316,
+													"name" : "Identifier",
+													"src" : "5304:6:0"
+												}
+											],
+											"id" : 317,
+											"name" : "Assignment",
+											"src" : "5289:21:0"
+										}
+									],
+									"id" : 318,
+									"name" : "ExpressionStatement",
+									"src" : "5289:21:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_address_payable",
+																"typeString" : "address payable"
+															},
+															{
+																"typeIdentifier" : "t_uint256",
+																"typeString" : "uint256"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 54,
+														"type" : "function (address,uint256)",
+														"value" : "Burn"
+													},
+													"id" : 319,
+													"name" : "Identifier",
+													"src" : "5369:4:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"member_name" : "sender",
+														"referencedDeclaration" : null,
+														"type" : "address payable"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 399,
+																"type" : "msg",
+																"value" : "msg"
+															},
+															"id" : 320,
+															"name" : "Identifier",
+															"src" : "5374:3:0"
+														}
+													],
+													"id" : 321,
+													"name" : "MemberAccess",
+													"src" : "5374:10:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 294,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 322,
+													"name" : "Identifier",
+													"src" : "5386:6:0"
+												}
+											],
+											"id" : 323,
+											"name" : "FunctionCall",
+											"src" : "5369:24:0"
+										}
+									],
+									"id" : 324,
+									"name" : "EmitStatement",
+									"src" : "5364:29:0"
+								},
+								{
+									"attributes" : 
+									{
+										"functionReturnParameters" : 298
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"hexvalue" : "74727565",
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : true,
+												"lValueRequested" : false,
+												"subdenomination" : null,
+												"token" : "bool",
+												"type" : "bool",
+												"value" : "true"
+											},
+											"id" : 325,
+											"name" : "Literal",
+											"src" : "5410:4:0"
+										}
+									],
+									"id" : 326,
+									"name" : "Return",
+									"src" : "5403:11:0"
+								}
+							],
+							"id" : 327,
+							"name" : "Block",
+							"src" : "5113:308:0"
+						}
+					],
+					"id" : 328,
+					"name" : "FunctionDefinition",
+					"src" : "5053:368:0"
+				},
+				{
+					"attributes" : 
+					{
+						"documentation" : "Destroy tokens from other account\n     * Remove `_value` tokens from the system irreversibly on behalf of `_from`.\n     * @param _from the address of the sender\n@param _value the amount of money to burn",
+						"implemented" : true,
+						"isConstructor" : false,
+						"kind" : "function",
+						"modifiers" : 
+						[
+							null
+						],
+						"name" : "burnFrom",
+						"scope" : 384,
+						"stateMutability" : "nonpayable",
+						"superFunction" : null,
+						"visibility" : "public"
+					},
+					"children" : 
+					[
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_from",
+										"scope" : 383,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "address",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "address",
+												"stateMutability" : "nonpayable",
+												"type" : "address"
+											},
+											"id" : 329,
+											"name" : "ElementaryTypeName",
+											"src" : "5692:7:0"
+										}
+									],
+									"id" : 330,
+									"name" : "VariableDeclaration",
+									"src" : "5692:13:0"
+								},
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "_value",
+										"scope" : 383,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "uint256",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "uint256",
+												"type" : "uint256"
+											},
+											"id" : 331,
+											"name" : "ElementaryTypeName",
+											"src" : "5707:7:0"
+										}
+									],
+									"id" : 332,
+									"name" : "VariableDeclaration",
+									"src" : "5707:14:0"
+								}
+							],
+							"id" : 333,
+							"name" : "ParameterList",
+							"src" : "5691:31:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"attributes" : 
+									{
+										"constant" : false,
+										"name" : "success",
+										"scope" : 383,
+										"stateVariable" : false,
+										"storageLocation" : "default",
+										"type" : "bool",
+										"value" : null,
+										"visibility" : "internal"
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"name" : "bool",
+												"type" : "bool"
+											},
+											"id" : 334,
+											"name" : "ElementaryTypeName",
+											"src" : "5739:4:0"
+										}
+									],
+									"id" : 335,
+									"name" : "VariableDeclaration",
+									"src" : "5739:12:0"
+								}
+							],
+							"id" : 336,
+							"name" : "ParameterList",
+							"src" : "5738:14:0"
+						},
+						{
+							"children" : 
+							[
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															402,
+															403
+														],
+														"referencedDeclaration" : 402,
+														"type" : "function (bool) pure",
+														"value" : "require"
+													},
+													"id" : 337,
+													"name" : "Identifier",
+													"src" : "5763:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_uint256",
+															"typeString" : "uint256"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : ">=",
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 26,
+																		"type" : "mapping(address => uint256)",
+																		"value" : "balanceOf"
+																	},
+																	"id" : 338,
+																	"name" : "Identifier",
+																	"src" : "5771:9:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 330,
+																		"type" : "address",
+																		"value" : "_from"
+																	},
+																	"id" : 339,
+																	"name" : "Identifier",
+																	"src" : "5781:5:0"
+																}
+															],
+															"id" : 340,
+															"name" : "IndexAccess",
+															"src" : "5771:16:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 332,
+																"type" : "uint256",
+																"value" : "_value"
+															},
+															"id" : 341,
+															"name" : "Identifier",
+															"src" : "5791:6:0"
+														}
+													],
+													"id" : 342,
+													"name" : "BinaryOperation",
+													"src" : "5771:26:0"
+												}
+											],
+											"id" : 343,
+											"name" : "FunctionCall",
+											"src" : "5763:35:0"
+										}
+									],
+									"id" : 344,
+									"name" : "ExpressionStatement",
+									"src" : "5763:35:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_bool",
+																"typeString" : "bool"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															402,
+															403
+														],
+														"referencedDeclaration" : 402,
+														"type" : "function (bool) pure",
+														"value" : "require"
+													},
+													"id" : 345,
+													"name" : "Identifier",
+													"src" : "5866:7:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"commonType" : 
+														{
+															"typeIdentifier" : "t_uint256",
+															"typeString" : "uint256"
+														},
+														"isConstant" : false,
+														"isLValue" : false,
+														"isPure" : false,
+														"lValueRequested" : false,
+														"operator" : "<=",
+														"type" : "bool"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 332,
+																"type" : "uint256",
+																"value" : "_value"
+															},
+															"id" : 346,
+															"name" : "Identifier",
+															"src" : "5874:6:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "uint256"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : true,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"type" : "mapping(address => uint256)"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 32,
+																				"type" : "mapping(address => mapping(address => uint256))",
+																				"value" : "allowance"
+																			},
+																			"id" : 347,
+																			"name" : "Identifier",
+																			"src" : "5884:9:0"
+																		},
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 330,
+																				"type" : "address",
+																				"value" : "_from"
+																			},
+																			"id" : 348,
+																			"name" : "Identifier",
+																			"src" : "5894:5:0"
+																		}
+																	],
+																	"id" : 349,
+																	"name" : "IndexAccess",
+																	"src" : "5884:16:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"isConstant" : false,
+																		"isLValue" : false,
+																		"isPure" : false,
+																		"lValueRequested" : false,
+																		"member_name" : "sender",
+																		"referencedDeclaration" : null,
+																		"type" : "address payable"
+																	},
+																	"children" : 
+																	[
+																		{
+																			"attributes" : 
+																			{
+																				"argumentTypes" : null,
+																				"overloadedDeclarations" : 
+																				[
+																					null
+																				],
+																				"referencedDeclaration" : 399,
+																				"type" : "msg",
+																				"value" : "msg"
+																			},
+																			"id" : 350,
+																			"name" : "Identifier",
+																			"src" : "5901:3:0"
+																		}
+																	],
+																	"id" : 351,
+																	"name" : "MemberAccess",
+																	"src" : "5901:10:0"
+																}
+															],
+															"id" : 352,
+															"name" : "IndexAccess",
+															"src" : "5884:28:0"
+														}
+													],
+													"id" : 353,
+													"name" : "BinaryOperation",
+													"src" : "5874:38:0"
+												}
+											],
+											"id" : 354,
+											"name" : "FunctionCall",
+											"src" : "5866:47:0"
+										}
+									],
+									"id" : 355,
+									"name" : "ExpressionStatement",
+									"src" : "5866:47:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "-=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : true,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 26,
+																"type" : "mapping(address => uint256)",
+																"value" : "balanceOf"
+															},
+															"id" : 356,
+															"name" : "Identifier",
+															"src" : "5945:9:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"overloadedDeclarations" : 
+																[
+																	null
+																],
+																"referencedDeclaration" : 330,
+																"type" : "address",
+																"value" : "_from"
+															},
+															"id" : 357,
+															"name" : "Identifier",
+															"src" : "5955:5:0"
+														}
+													],
+													"id" : 358,
+													"name" : "IndexAccess",
+													"src" : "5945:16:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 332,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 359,
+													"name" : "Identifier",
+													"src" : "5965:6:0"
+												}
+											],
+											"id" : 360,
+											"name" : "Assignment",
+											"src" : "5945:26:0"
+										}
+									],
+									"id" : 361,
+									"name" : "ExpressionStatement",
+									"src" : "5945:26:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "-=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"isConstant" : false,
+														"isLValue" : true,
+														"isPure" : false,
+														"lValueRequested" : true,
+														"type" : "uint256"
+													},
+													"children" : 
+													[
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : true,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"type" : "mapping(address => uint256)"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 32,
+																		"type" : "mapping(address => mapping(address => uint256))",
+																		"value" : "allowance"
+																	},
+																	"id" : 362,
+																	"name" : "Identifier",
+																	"src" : "6043:9:0"
+																},
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 330,
+																		"type" : "address",
+																		"value" : "_from"
+																	},
+																	"id" : 363,
+																	"name" : "Identifier",
+																	"src" : "6053:5:0"
+																}
+															],
+															"id" : 366,
+															"name" : "IndexAccess",
+															"src" : "6043:16:0"
+														},
+														{
+															"attributes" : 
+															{
+																"argumentTypes" : null,
+																"isConstant" : false,
+																"isLValue" : false,
+																"isPure" : false,
+																"lValueRequested" : false,
+																"member_name" : "sender",
+																"referencedDeclaration" : null,
+																"type" : "address payable"
+															},
+															"children" : 
+															[
+																{
+																	"attributes" : 
+																	{
+																		"argumentTypes" : null,
+																		"overloadedDeclarations" : 
+																		[
+																			null
+																		],
+																		"referencedDeclaration" : 399,
+																		"type" : "msg",
+																		"value" : "msg"
+																	},
+																	"id" : 364,
+																	"name" : "Identifier",
+																	"src" : "6060:3:0"
+																}
+															],
+															"id" : 365,
+															"name" : "MemberAccess",
+															"src" : "6060:10:0"
+														}
+													],
+													"id" : 367,
+													"name" : "IndexAccess",
+													"src" : "6043:28:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 332,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 368,
+													"name" : "Identifier",
+													"src" : "6075:6:0"
+												}
+											],
+											"id" : 369,
+											"name" : "Assignment",
+											"src" : "6043:38:0"
+										}
+									],
+									"id" : 370,
+									"name" : "ExpressionStatement",
+									"src" : "6043:38:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"lValueRequested" : false,
+												"operator" : "-=",
+												"type" : "uint256"
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 22,
+														"type" : "uint256",
+														"value" : "totalSupply"
+													},
+													"id" : 371,
+													"name" : "Identifier",
+													"src" : "6143:11:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 332,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 372,
+													"name" : "Identifier",
+													"src" : "6158:6:0"
+												}
+											],
+											"id" : 373,
+											"name" : "Assignment",
+											"src" : "6143:21:0"
+										}
+									],
+									"id" : 374,
+									"name" : "ExpressionStatement",
+									"src" : "6143:21:0"
+								},
+								{
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"isStructConstructorCall" : false,
+												"lValueRequested" : false,
+												"names" : 
+												[
+													null
+												],
+												"type" : "tuple()",
+												"type_conversion" : false
+											},
+											"children" : 
+											[
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : 
+														[
+															{
+																"typeIdentifier" : "t_address",
+																"typeString" : "address"
+															},
+															{
+																"typeIdentifier" : "t_uint256",
+																"typeString" : "uint256"
+															}
+														],
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 54,
+														"type" : "function (address,uint256)",
+														"value" : "Burn"
+													},
+													"id" : 375,
+													"name" : "Identifier",
+													"src" : "6230:4:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 330,
+														"type" : "address",
+														"value" : "_from"
+													},
+													"id" : 376,
+													"name" : "Identifier",
+													"src" : "6235:5:0"
+												},
+												{
+													"attributes" : 
+													{
+														"argumentTypes" : null,
+														"overloadedDeclarations" : 
+														[
+															null
+														],
+														"referencedDeclaration" : 332,
+														"type" : "uint256",
+														"value" : "_value"
+													},
+													"id" : 377,
+													"name" : "Identifier",
+													"src" : "6242:6:0"
+												}
+											],
+											"id" : 378,
+											"name" : "FunctionCall",
+											"src" : "6230:19:0"
+										}
+									],
+									"id" : 379,
+									"name" : "EmitStatement",
+									"src" : "6225:24:0"
+								},
+								{
+									"attributes" : 
+									{
+										"functionReturnParameters" : 336
+									},
+									"children" : 
+									[
+										{
+											"attributes" : 
+											{
+												"argumentTypes" : null,
+												"hexvalue" : "74727565",
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : true,
+												"lValueRequested" : false,
+												"subdenomination" : null,
+												"token" : "bool",
+												"type" : "bool",
+												"value" : "true"
+											},
+											"id" : 380,
+											"name" : "Literal",
+											"src" : "6266:4:0"
+										}
+									],
+									"id" : 381,
+									"name" : "Return",
+									"src" : "6259:11:0"
+								}
+							],
+							"id" : 382,
+							"name" : "Block",
+							"src" : "5753:524:0"
+						}
+					],
+					"id" : 383,
+					"name" : "FunctionDefinition",
+					"src" : "5674:603:0"
+				}
+			],
+			"id" : 384,
+			"name" : "ContractDefinition",
+			"src" : "313:5966:0"
+		}
+	],
+	"id" : 385,
+	"name" : "SourceUnit",
+	"src" : "134:6146:0"
+}

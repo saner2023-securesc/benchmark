@@ -1,0 +1,7 @@
+BugType,InjectedBugs,FalseNegatives,MisClassified,UnDetected
+Re-entrancy,1343,1237,52,1185
+Timestamp-Dependency,1381,1248,1,1247
+Unchecked-Send,1266,1092,0,1092
+Unhandled-Exceptions,1374,1374,157,1217
+Overflow-Underflow,1333,1333,227,1106
+tx.origin,1336,1336,307,1029

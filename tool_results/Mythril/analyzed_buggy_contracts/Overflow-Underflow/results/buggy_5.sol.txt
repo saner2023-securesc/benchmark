@@ -1,0 +1,154 @@
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Ownable
+Function name: withdraw_intou9()
+PC address: 878
+Estimated Gas Usage: 1036 - 1321
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_5.sol:40
+
+require(now > lockTime_intou9[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x80002, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou9(), txdata: 0x1cbdc87d, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Ownable
+Function name: increaseLockTime_intou9(uint256)
+PC address: 1057
+Estimated Gas Usage: 6195 - 26480
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_5.sol:37
+
+lockTime_intou9[msg.sender] += _secondsToIncrease
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x8740420000a34543, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x3b00420000230541, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: increaseLockTime_intou9(uint256), txdata: 0x4d3608dd8000000000000000000000000000000000000000000000000000000000000000, value: 0x0
+Caller: [ATTACKER], function: increaseLockTime_intou9(uint256), txdata: 0x4d3608ddc10913000cbf709d8b8021e90000000000000000000000000000000800000000, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Ownable
+Function name: withdraw_intou21()
+PC address: 1160
+Estimated Gas Usage: 1124 - 1409
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_5.sol:14
+
+require(now > lockTime_intou21[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x440000002403, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: withdraw_intou21(), txdata: 0x81bb4758, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: Ownable
+Function name: withdraw_intou25()
+PC address: 1315
+Estimated Gas Usage: 1146 - 1431
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_5.sol:68
+
+require(now > lockTime_intou25[msg.sender])
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x1004100001004, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: withdraw_intou25(), txdata: 0x835185a4, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Ownable
+Function name: increaseLockTime_intou21(uint256)
+PC address: 1507
+Estimated Gas Usage: 6172 - 26457
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_5.sol:11
+
+lockTime_intou21[msg.sender] += _secondsToIncrease
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x40000020000a1a83, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: increaseLockTime_intou21(uint256), txdata: 0xa3af6a70900004280180029a0110000400002010818062030118094000018b555d5c3209, value: 0x0
+Caller: [SOMEGUY], function: increaseLockTime_intou21(uint256), txdata: 0xa3af6a7080007d0000000301093000028000000000000000000000000000000000000000, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: Ownable
+Function name: increaseLockTime_intou25(uint256)
+PC address: 1601
+Estimated Gas Usage: 6216 - 26501
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Overflow-Underflow/buggy_5.sol:65
+
+lockTime_intou25[msg.sender] += _secondsToIncrease
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x380000000002203, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x20430100001280001, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [ATTACKER], function: increaseLockTime_intou25(uint256), txdata: 0xb1069824c0520480f64f0d480180638208090000490010005430e41ec003353749bd844a, value: 0x0
+Caller: [ATTACKER], function: increaseLockTime_intou25(uint256), txdata: 0xb1069824a02e0000114114010180523f0000000000000000000000000000000000000001, value: 0x0
+
+

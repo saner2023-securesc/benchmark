@@ -1,0 +1,27 @@
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: Ownable
+Function name: bug_unchk_send12()
+PC address: 391
+Estimated Gas Usage: 923 - 35204
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: tool_results/Mythril/analyzed_buggy_contracts/Unchecked-Send/buggy_5.sol:25
+
+msg.sender.transfer(1 ether)
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0xe840233c0040000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , value: 0x0
+Caller: [SOMEGUY], function: bug_unchk_send30(), txdata: 0xdc52a049, value: 0xde0b6b3a7640001
+Caller: [ATTACKER], function: bug_unchk_send12(), txdata: 0x908025b4, value: 0xde0b6b3a763ffff
+
+
